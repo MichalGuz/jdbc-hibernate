@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class DbManagerTestSuite {
     @Test
@@ -24,5 +25,6 @@ public class DbManagerTestSuite {
 
         // when
         String sqlQuery = "SELECT * FROM USERS";
+        Statement statement = dbManager.getConnection().createStatement();
     }
 }
