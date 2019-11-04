@@ -3,6 +3,7 @@ package com.spring.jdbchibernate.jdbc;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -26,5 +27,6 @@ public class DbManagerTestSuite {
         // when
         String sqlQuery = "SELECT * FROM USERS";
         Statement statement = dbManager.getConnection().createStatement();
+        ResultSet resultSet = statement.executeQuery(sqlQuery);
     }
 }
