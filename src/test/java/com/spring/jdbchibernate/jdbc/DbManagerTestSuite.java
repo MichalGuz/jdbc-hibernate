@@ -17,4 +17,6 @@ public class DbManagerTestSuite {
         Assert.assertNotNull(dbManager.getConnection());
     }
 
+    @Test
+    public void testSelectUsers() {}
 }
