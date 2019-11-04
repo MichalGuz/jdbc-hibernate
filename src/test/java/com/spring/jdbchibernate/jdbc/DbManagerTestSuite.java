@@ -18,8 +18,11 @@ public class DbManagerTestSuite {
     }
 
     @Test
-    public void testSelectUsers() {
+    public void testSelectUsers() throws SQLException {
         // given
         DbManager dbManager = DbManager.getInstance();
+
+        // when
+        String sqlQuery = "SELECT * FROM USERS";
     }
 }
