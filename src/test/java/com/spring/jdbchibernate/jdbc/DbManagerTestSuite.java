@@ -1,5 +1,6 @@
 package com.spring.jdbchibernate.jdbc;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.sql.SQLException;
@@ -11,6 +12,9 @@ public class DbManagerTestSuite {
 
         // when
         DbManager dbManager = DbManager.getInstance();
+
+        // then
+        Assert.assertNotNull(dbManager.getConnection());
     }
 
 }
