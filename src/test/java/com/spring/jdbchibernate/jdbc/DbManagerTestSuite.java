@@ -37,6 +37,6 @@ public class DbManagerTestSuite {
             counter++;
         }
         resultSet.close();
-
+        statement.close();
         }
 }
