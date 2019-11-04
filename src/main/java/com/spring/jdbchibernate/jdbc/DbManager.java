@@ -16,7 +16,7 @@ public class DbManager {
         connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Practise?serverTimezone=Europe/Warsaw" + "&useSSL=False", connectionProperties);
     }
 
-    public static DbManager getInstance() {
+    public static DbManager getInstance() throws SQLException {
 
     }
 }
