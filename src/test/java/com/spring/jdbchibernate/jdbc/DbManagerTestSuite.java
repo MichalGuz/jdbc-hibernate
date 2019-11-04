@@ -36,6 +36,7 @@ public class DbManagerTestSuite {
             System.out.println(resultSet.getInt("ID") + ", " + resultSet.getString("FIRSTNAME") + ", " + resultSet.getString("LASTNAME"));
             counter++;
         }
+        resultSet.close();
 
         }
 }
