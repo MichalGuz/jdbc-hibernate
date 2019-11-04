@@ -17,6 +17,8 @@ public class DbManager {
     }
 
     public static DbManager getInstance() throws SQLException {
-
+        if (dbManagerInstance == null) {
+            dbManagerInstance = new DbManager();
+        }
     }
 }
