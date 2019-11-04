@@ -18,5 +18,8 @@ public class DbManagerTestSuite {
     }
 
     @Test
-    public void testSelectUsers() {}
+    public void testSelectUsers() {
+        // given
+        DbManager dbManager = DbManager.getInstance();
+    }
 }
