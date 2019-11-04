@@ -11,6 +11,7 @@ public class DbManager {
     private DbManager() throws SQLException {
         Properties connectionProperties = new Properties();
         connectionProperties.put("user", "mg_user");
+        connectionProperties.put("password", "user_password");
 
     }
 }
