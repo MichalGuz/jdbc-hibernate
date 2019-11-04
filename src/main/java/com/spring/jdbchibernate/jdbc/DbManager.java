@@ -20,5 +20,6 @@ public class DbManager {
         if (dbManagerInstance == null) {
             dbManagerInstance = new DbManager();
         }
+        return dbManagerInstance;
     }
 }
