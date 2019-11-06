@@ -13,7 +13,7 @@ public class DbManager {
         Properties connectionProperties = new Properties();
         connectionProperties.put("user", "mg_user");
         connectionProperties.put("password", "user_password");
-        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Practise?serverTimezone=Europe/Warsaw" + "&useSSL=False", connectionProperties);
+        connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/db_practise?serverTimezone=Europe/Warsaw" + "&useSSL=False", connectionProperties);
     }
 
     public static DbManager getInstance() throws SQLException {
