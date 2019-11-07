@@ -3,6 +3,7 @@ package com.spring.jdbchibernate.jdbc;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -44,6 +45,7 @@ public class DbManagerTestSuite {
 
     @Test
     public void testSelectUsersAndPosts() {
-
+        // given
+        DbManager dbManager = DbManager.getInstance();
     }
 }
