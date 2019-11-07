@@ -54,5 +54,6 @@ public class DbManagerTestSuite {
                 "WHERE U.ID = P.USER_ID\n" +
                 "GROUP BY POSTS_NUMBER\n" +
                 "HAVING COUNT(*) > 2\n";
+        Statement statement = dbManager.getConnection().createStatement();
     }
 }
