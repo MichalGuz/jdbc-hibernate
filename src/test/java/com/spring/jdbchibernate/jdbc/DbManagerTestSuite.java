@@ -47,5 +47,12 @@ public class DbManagerTestSuite {
     public void testSelectUsersAndPosts() throws SQLException{
         // given
         DbManager dbManager = DbManager.getInstance();
+
+        // when
+        String sqlQuerry = "SELECT U.FIRSTNAME, U.LASTNAME P.USER_ID COUNT(*) AS POSTS_NUMBER\n " +
+                "FROM USERS U, POSTS P\n" +
+                "WHERE U.ID = P.USER_ID\n" +
+                "GROUP BY POSTS_NUMBER\n" +
+                "HAVING COUNT(*) > 2\n";
     }
 }
