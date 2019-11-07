@@ -41,4 +41,9 @@ public class DbManagerTestSuite {
 
         Assert.assertEquals(12, counter);
     }
+
+    @Test
+    public void testSelectUsersAndPosts() {
+
+    }
 }
