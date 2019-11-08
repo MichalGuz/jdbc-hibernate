@@ -68,7 +68,7 @@ public class DbManagerTestSuite {
     }
 
     @Test
-    public void testSelectUserWithDistinctLastName() {
+    public void testSelectUserWithDistinctLastName() throws SQLException {
         // given
         DbManager dbManager = DbManager.getInstance();
     }
