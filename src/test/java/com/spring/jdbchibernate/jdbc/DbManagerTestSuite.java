@@ -71,5 +71,8 @@ public class DbManagerTestSuite {
     public void testSelectUserWithDistinctLastName() throws SQLException {
         // given
         DbManager dbManager = DbManager.getInstance();
+
+        // when
+        String query = "SELECT DISTINCT(LASTNAME) FROM USERS";
     }
 }
