@@ -49,7 +49,7 @@ public class DbManagerTestSuite {
         DbManager dbManager = DbManager.getInstance();
 
         // when
-        String sqlQuerry = "SELECT U.FIRSTNAME, U.LASTNAME P.USER_ID COUNT(*) AS POSTS_NUMBER\n " +
+        String sqlQuerry = "SELECT U.FIRSTNAME, U.LASTNAME, P.USER_ID, COUNT(*) AS POSTS_NUMBER\n " +
                 "FROM USERS U, POSTS P\n" +
                 "WHERE U.ID = P.USER_ID\n" +
                 "GROUP BY POSTS_NUMBER\n" +
@@ -58,6 +58,6 @@ public class DbManagerTestSuite {
         ResultSet resultSet = statement.executeQuery(sqlQuerry);
 
         // then
-
+        Assert.assertEquals(6, resultSet.getFetchSize());
     }
 }
