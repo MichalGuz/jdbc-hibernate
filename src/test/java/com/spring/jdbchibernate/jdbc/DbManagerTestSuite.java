@@ -58,6 +58,10 @@ public class DbManagerTestSuite {
         ResultSet resultSet = statement.executeQuery(sqlQuerry);
 
         // then
-        Assert.assertEquals(6, resultSet.getFetchSize());
+
+        while (resultSet.next()) {
+
+        }
+        Assert.assertEquals(6, ));
     }
 }
