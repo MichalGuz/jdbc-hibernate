@@ -64,6 +64,11 @@ public class DbManagerTestSuite {
             System.out.println(resultSet.getString("FIRSTNAME") + " " + resultSet.getString("LASTNAME") + " " + resultSet.getInt("POSTS_NUMBER") + ";" );
             counter++;
         }
-        Assert.assertEquals(6, ));
+        Assert.assertEquals(5, counter);
+    }
+
+    @Test
+    public void testSelectUserWithDistinctLastName() {
+
     }
 }
