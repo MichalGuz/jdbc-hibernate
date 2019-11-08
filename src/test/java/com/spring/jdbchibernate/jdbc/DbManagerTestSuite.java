@@ -60,7 +60,7 @@ public class DbManagerTestSuite {
         // then
 
         while (resultSet.next()) {
-
+            System.out.println(resultSet.getString("FIRSTNAME") + " " + resultSet.getString("LASTNAME") + " " + resultSet.getInt("POSTS_NUMBER") + ";" );
         }
         Assert.assertEquals(6, ));
     }
