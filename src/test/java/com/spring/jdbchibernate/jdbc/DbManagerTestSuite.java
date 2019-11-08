@@ -69,6 +69,7 @@ public class DbManagerTestSuite {
 
     @Test
     public void testSelectUserWithDistinctLastName() {
-
+        // given
+        DbManager dbManager = DbManager.getInstance();
     }
 }
