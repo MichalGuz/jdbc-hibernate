@@ -14,4 +14,20 @@ public class Task {
         this.created = created;
         this.duration = duration;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public Date getCreated() {
+        return created;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
 }
