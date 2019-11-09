@@ -9,9 +9,8 @@ public class Task {
     private int duration;
 
     public Task(String description, int duration) {
-        this.id = id;
         this.description = description;
-        this.created = created;
+        this.created = new Date();
         this.duration = duration;
     }
 
