@@ -83,5 +83,8 @@ public class DbManagerTestSuite {
             System.out.println(resultSet.getString("LASTNAME"));
             counter++;
         }
+
+
+        System.out.println("Database consists " + counter + " different lastnames.");
     }
 }
