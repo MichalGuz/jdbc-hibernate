@@ -7,4 +7,11 @@ public class Task {
     private String description;
     private Date created;
     private int duration;
+
+    public Task(int id, String description, Date created, int duration) {
+        this.id = id;
+        this.description = description;
+        this.created = created;
+        this.duration = duration;
+    }
 }
