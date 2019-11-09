@@ -75,5 +75,6 @@ public class DbManagerTestSuite {
         // when
         String query = "SELECT DISTINCT(LASTNAME) FROM USERS";
         Statement statement = dbManager.getConnection().createStatement();
+        ResultSet resultSet = statement.executeQuery(query);
     }
 }
