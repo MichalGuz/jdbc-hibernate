@@ -79,5 +79,8 @@ public class DbManagerTestSuite {
 
         // then
         int counter = 0;
+        while (resultSet.next()) {
+
+        }
     }
 }
