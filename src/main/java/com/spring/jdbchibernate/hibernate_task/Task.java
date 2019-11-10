@@ -32,6 +32,7 @@ public class Task {
         return created;
     }
 
+    @Column(name = "DURATION")
     public int getDuration() {
         return duration;
     }
