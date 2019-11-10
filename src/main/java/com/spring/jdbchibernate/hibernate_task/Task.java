@@ -21,6 +21,7 @@ public class Task {
     @Id
     @GeneratedValue
     @NotNull
+    @Column(name = "ID")
     public int getId() {
         return id;
     }
