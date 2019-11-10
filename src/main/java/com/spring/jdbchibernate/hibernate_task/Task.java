@@ -18,6 +18,9 @@ public class Task {
         this.duration = duration;
     }
 
+    public Task(){
+    }
+
     @Id
     @GeneratedValue
     @NotNull
