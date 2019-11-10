@@ -1,7 +1,9 @@
 package com.spring.jdbchibernate.hibernate_task;
 
+import javax.persistence.Entity;
 import java.util.Date;
 
+@Entity
 public class Task {
     private int id;
     private String description;
