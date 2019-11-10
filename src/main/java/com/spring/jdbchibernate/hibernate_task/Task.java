@@ -2,6 +2,7 @@ package com.spring.jdbchibernate.hibernate_task;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
@@ -20,6 +21,7 @@ public class Task {
         this.duration = duration;
     }
 
+    @Id
     public int getId() {
         return id;
     }
