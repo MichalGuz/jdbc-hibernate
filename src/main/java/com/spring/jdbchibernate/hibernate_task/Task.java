@@ -44,4 +44,20 @@ public class Task {
     public int getDuration() {
         return duration;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setCreated(Date created) {
+        this.created = created;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
 }
