@@ -1,5 +1,6 @@
 package com.spring.jdbchibernate.hibernate_task;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.util.Date;
@@ -22,6 +23,7 @@ public class Task {
         return id;
     }
 
+    @Column(name = "DESCRIPTION")
     public String getDescription() {
         return description;
     }
