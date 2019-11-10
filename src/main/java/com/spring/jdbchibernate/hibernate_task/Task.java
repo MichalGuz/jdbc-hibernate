@@ -20,6 +20,7 @@ public class Task {
 
     @Id
     @GeneratedValue
+    @NotNull
     public int getId() {
         return id;
     }
