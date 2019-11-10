@@ -1,9 +1,11 @@
 package com.spring.jdbchibernate.hibernate_task;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.Date;
 
 @Entity
+@Table(name = "TASKS")
 public class Task {
     private int id;
     private String description;
