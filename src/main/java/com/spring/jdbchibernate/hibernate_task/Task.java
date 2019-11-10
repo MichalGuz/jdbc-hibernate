@@ -28,6 +28,7 @@ public class Task {
         return description;
     }
 
+    @Column(name = "CREATED")
     public Date getCreated() {
         return created;
     }
