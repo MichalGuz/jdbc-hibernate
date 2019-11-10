@@ -3,6 +3,7 @@ package com.spring.jdbchibernate.hibernate_task;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Entity
@@ -28,6 +29,7 @@ public class Task {
         return description;
     }
 
+    @NotNull
     @Column(name = "CREATED")
     public Date getCreated() {
         return created;
