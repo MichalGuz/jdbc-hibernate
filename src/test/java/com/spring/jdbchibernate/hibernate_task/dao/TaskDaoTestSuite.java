@@ -20,5 +20,8 @@ public class TaskDaoTestSuite {
 
         // when
         taskDao.save(task);
+
+        // then
+        int id = task.getId();
     }
 }
