@@ -2,6 +2,7 @@ package com.spring.jdbchibernate.hibernate_task.dao;
 
 import com.spring.jdbchibernate.hibenate_task.dao.TaskDao;
 import com.spring.jdbchibernate.hibernate_task.Task;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -26,5 +27,7 @@ public class TaskDaoTestSuite {
         // then
         int id = task.getId();
         Optional<Task> readTask = taskDao.findById(id);
+        Assert.assertEquals(id, readTask.get().getId() );
+
     }
 }
