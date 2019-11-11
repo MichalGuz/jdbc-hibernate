@@ -18,6 +18,7 @@ public class TaskDaoTestSuite {
         // given
         Task task = new Task(DESCRIPTION, 2);
 
-
+        // when
+        taskDao.save(task);
     }
 }
