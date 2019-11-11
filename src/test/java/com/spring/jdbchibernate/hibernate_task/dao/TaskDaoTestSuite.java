@@ -1,6 +1,7 @@
 package com.spring.jdbchibernate.hibernate_task.dao;
 
 import com.spring.jdbchibernate.hibenate_task.dao.TaskDao;
+import com.spring.jdbchibernate.hibernate_task.Task;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,6 +15,9 @@ public class TaskDaoTestSuite {
 
     @Test
     public void testTaskDaoSave() {
+        // given
+        Task task = new Task(DESCRIPTION, 2);
+
 
     }
 }
