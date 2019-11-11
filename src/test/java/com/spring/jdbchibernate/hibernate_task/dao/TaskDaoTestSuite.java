@@ -9,4 +9,5 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class TaskDaoTestSuite {
     private TaskDao taskDao;
+    private static final String DESCRIPTION = "Test: practise Hibernate.";
 }
