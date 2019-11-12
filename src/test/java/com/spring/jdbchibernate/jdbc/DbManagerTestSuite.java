@@ -84,7 +84,7 @@ public class DbManagerTestSuite {
             counter++;
         }
 
-        Assert.assertEquals(11, counter);
+        Assert.assertEquals(10, counter);
         System.out.println("Database consists " + counter + " different lastnames.");
     }
 }
