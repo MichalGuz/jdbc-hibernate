@@ -38,6 +38,9 @@ public class TaskDaoTestSuite {
 
     @Test
     public void testTaskDaoFindByDuration() {
-
+        // given
+        Task task = new Task(DESCRIPTION, 2);
+        taskDao.save(task);
+        int duration = task.getDuration();
     }
 }
