@@ -49,5 +49,8 @@ public class TaskDaoTestSuite {
 
         // then
         Assert.assertEquals(1, readTasks.size());
+
+        // cleanUp
+        taskDao.delete(task);
     }
 }
