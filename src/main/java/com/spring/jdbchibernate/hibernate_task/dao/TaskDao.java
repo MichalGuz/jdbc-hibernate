@@ -1,4 +1,4 @@
-package com.spring.jdbchibernate.hibenate_task.dao;
+package com.spring.jdbchibernate.hibernate_task.dao;
 
 import com.spring.jdbchibernate.hibernate_task.Task;
 import org.springframework.data.repository.CrudRepository;
