@@ -1,8 +1,12 @@
 package com.spring.jdbchibernate.hibernate_taskList.dao;
 
+import com.spring.jdbchibernate.hibernate_task.Task;
 import com.spring.jdbchibernate.hibernate_tasklist.TaskList;
 import com.spring.jdbchibernate.hibernate_tasklist.dao.TaskListDao;
 import org.junit.Test;
+
+import java.util.List;
+import java.util.Optional;
 
 public class TaskListDaoTestSuite {
 
@@ -13,8 +17,13 @@ public class TaskListDaoTestSuite {
     public void testFindByListName() {
         // given
         TaskList taskList = new TaskList("List #1", DECSRIPTION );
+        taskListDao.save(taskList);
+        String nameOfList = taskList.getListName();
 
         // when
-        taskListDao.save(taskList);
+        List<TaskList> readTaskList = taskListDao.findByListName("List #1");
+
+
+
     }
 }
