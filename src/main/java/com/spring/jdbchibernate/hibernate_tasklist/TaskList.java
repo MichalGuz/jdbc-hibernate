@@ -29,6 +29,7 @@ public class TaskList {
         return listName;
     }
 
+    @Column(name = "DESCRIPTION")
     public String getDescription() {
         return description;
     }
