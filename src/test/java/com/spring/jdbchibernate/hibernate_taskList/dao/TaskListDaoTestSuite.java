@@ -3,6 +3,7 @@ package com.spring.jdbchibernate.hibernate_taskList.dao;
 import com.spring.jdbchibernate.hibernate_task.Task;
 import com.spring.jdbchibernate.hibernate_tasklist.TaskList;
 import com.spring.jdbchibernate.hibernate_tasklist.dao.TaskListDao;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
@@ -23,7 +24,8 @@ public class TaskListDaoTestSuite {
         // when
         List<TaskList> readTaskList = taskListDao.findByListName("List #1");
 
-
+        // then
+        Assert.assertEquals(1, readTaskList.size());
 
     }
 }
