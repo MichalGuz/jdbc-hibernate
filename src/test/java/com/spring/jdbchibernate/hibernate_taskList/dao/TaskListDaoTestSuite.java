@@ -12,7 +12,8 @@ public class TaskListDaoTestSuite {
     @Test
     public void testFindByListName() {
         // given
-        TaskList taskList = new TaskList();
+        TaskList taskList = new TaskList("List #1", DECSRIPTION );
+
 
     }
 }
