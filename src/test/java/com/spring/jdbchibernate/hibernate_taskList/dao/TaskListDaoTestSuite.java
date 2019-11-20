@@ -10,12 +10,12 @@ import java.util.List;
 public class TaskListDaoTestSuite {
 
     private TaskListDao taskListDao;
-    private static final String DECSRIPTION = "Description for test.";
+    private static final String DESCRIPTION = "Description for test.";
 
     @Test
     public void testFindByListName() {
         // given
-        TaskList taskList = new TaskList("List #1", DECSRIPTION );
+        TaskList taskList = new TaskList("List #1", DESCRIPTION);
         taskListDao.save(taskList);
         String nameOfList = taskList.getListName();
 
