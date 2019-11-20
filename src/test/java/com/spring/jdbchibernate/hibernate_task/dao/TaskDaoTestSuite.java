@@ -1,7 +1,6 @@
 package com.spring.jdbchibernate.hibernate_task.dao;
 
 import com.spring.jdbchibernate.hibernate_task.Task;
-import org.hibernate.internal.build.AllowSysOut;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
