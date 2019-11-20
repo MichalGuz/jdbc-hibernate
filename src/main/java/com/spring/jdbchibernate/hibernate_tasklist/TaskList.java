@@ -1,5 +1,10 @@
 package com.spring.jdbchibernate.hibernate_tasklist;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "TASKLISTS")
 public class TaskList {
     private int id;
     private String listName;
