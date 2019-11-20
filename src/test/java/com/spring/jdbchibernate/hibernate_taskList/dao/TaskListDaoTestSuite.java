@@ -22,7 +22,7 @@ public class TaskListDaoTestSuite {
         String nameOfList = taskList.getListName();
 
         // when
-        List<TaskList> readTaskList = taskListDao.findByListName("List #1");
+        List<TaskList> readTaskList = taskListDao.findByListName(nameOfList);
 
         // then
         Assert.assertEquals(1, readTaskList.size());
