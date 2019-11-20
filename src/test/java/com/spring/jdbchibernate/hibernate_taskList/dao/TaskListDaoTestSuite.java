@@ -1,13 +1,11 @@
 package com.spring.jdbchibernate.hibernate_taskList.dao;
 
-import com.spring.jdbchibernate.hibernate_task.Task;
 import com.spring.jdbchibernate.hibernate_tasklist.TaskList;
 import com.spring.jdbchibernate.hibernate_tasklist.dao.TaskListDao;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
-import java.util.Optional;
 
 public class TaskListDaoTestSuite {
 
