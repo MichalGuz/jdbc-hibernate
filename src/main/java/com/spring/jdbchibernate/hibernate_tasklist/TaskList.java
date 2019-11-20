@@ -1,7 +1,7 @@
 package com.spring.jdbchibernate.hibernate_tasklist;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "TASKLISTS")
@@ -10,11 +10,16 @@ public class TaskList {
     private String listName;
     private String description;
 
+
     public TaskList(String listName, String description) {
         this.listName = listName;
         this.description = description;
     }
 
+    @Id
+    @GeneratedValue
+    @NotNull
+    @Column(name = "ID")
     public int getId() {
         return id;
     }
