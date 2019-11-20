@@ -9,4 +9,16 @@ public class TaskList {
         this.listName = listName;
         this.description = description;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getListName() {
+        return listName;
+    }
+
+    public String getDescription() {
+        return description;
+    }
 }
