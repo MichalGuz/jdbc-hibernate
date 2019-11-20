@@ -14,6 +14,7 @@ public class TaskListDaoTestSuite {
         // given
         TaskList taskList = new TaskList("List #1", DECSRIPTION );
 
-
+        // when
+        taskListDao.save(taskList);
     }
 }
