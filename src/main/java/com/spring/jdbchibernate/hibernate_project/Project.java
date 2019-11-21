@@ -21,4 +21,28 @@ public class Project {
 
     public Project() {
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public BigDecimal getWorthOfProject() {
+        return worthOfProject;
+    }
+
+    public BigDecimal getWorthOfGrant() {
+        return worthOfGrant;
+    }
+
+    public String getFund() {
+        return fund;
+    }
+
+    public Date getApplied() {
+        return applied;
+    }
 }
