@@ -1,6 +1,7 @@
 package com.spring.jdbchibernate.hibernate_beneficiary.dao;
 
 import com.spring.jdbchibernate.hibernate_beneficiary.Beneficiary;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -24,6 +25,8 @@ public class BeneficiaryDaoTestSuite {
         // when
         List<Beneficiary> beneficiaries = beneficiaryDao.findByEditorKey(retrievedEditorKey);
 
+        // then
+        Assert.assertEquals(1, beneficiaries.size());
 
 
     }
