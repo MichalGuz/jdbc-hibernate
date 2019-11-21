@@ -18,4 +18,7 @@ public class Project {
         this.worthOfProject = worthOfProject;
         this.worthOfGrant= worthOfGrant;
     }
+
+    public Project() {
+    }
 }
