@@ -32,6 +32,8 @@ public class Beneficiary {
         return name;
     }
 
+    @Column(name = "EDITOR_KEY")
+    @NotNull
     public int getEditorKey() {
         return editorKey;
     }
