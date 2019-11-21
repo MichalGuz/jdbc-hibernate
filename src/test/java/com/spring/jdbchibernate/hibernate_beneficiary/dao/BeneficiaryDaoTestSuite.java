@@ -6,6 +6,8 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.List;
+
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class BeneficiaryDaoTestSuite {
@@ -19,6 +21,8 @@ public class BeneficiaryDaoTestSuite {
         beneficiaryDao.save(beneficiary);
         int retrievedEditorKey = beneficiary.getEditorKey();
 
+        // when
+        List<Beneficiary> beneficiaries = beneficiaryDao.findByEditorKey(retrievedEditorKey);
 
 
 
