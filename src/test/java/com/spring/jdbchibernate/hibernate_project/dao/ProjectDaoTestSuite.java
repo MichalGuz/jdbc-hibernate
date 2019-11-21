@@ -29,5 +29,9 @@ public class ProjectDaoTestSuite {
 
         // then
         Assert.assertEquals(1, projects.size());
+
+        // cleanUp
+        projectDao.delete(project);
+
     }
 }
