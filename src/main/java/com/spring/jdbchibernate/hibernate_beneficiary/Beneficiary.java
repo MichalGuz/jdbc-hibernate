@@ -10,6 +10,9 @@ public class Beneficiary {
         this.editorKey = editorKey;
     }
 
+    public Beneficiary() {
+    }
+
     public int getId() {
         return id;
     }
