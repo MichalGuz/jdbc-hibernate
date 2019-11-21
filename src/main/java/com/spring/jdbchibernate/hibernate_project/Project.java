@@ -15,13 +15,15 @@ public class Project {
     private BigDecimal worthOfGrant;
     private String fund;
     private Date applied;
+    private String checksum;
 
-    public Project(String title, BigDecimal worthOfProject, BigDecimal worthOfGrant, String fund) {
+    public Project(String title, BigDecimal worthOfProject, BigDecimal worthOfGrant, String fund, String checksum) {
         this.title = title;
         this.fund = fund;
         this.applied = new Date();
         this.worthOfProject = worthOfProject;
         this.worthOfGrant= worthOfGrant;
+        this.checksum = checksum;
     }
 
     public Project() {
@@ -57,8 +59,19 @@ public class Project {
         return fund;
     }
 
+    @Column(name = "APPLIED")
     public Date getApplied() {
         return applied;
+    }
+
+    @Column(name = "CHECKSUM")
+    @NotNull
+    public String getChecksum() {
+        return checksum;
+    }
+
+    public void setChecksum(String checksum) {
+        this.checksum = checksum;
     }
 
     public void setId(int id) {
