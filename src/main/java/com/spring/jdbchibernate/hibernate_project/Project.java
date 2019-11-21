@@ -52,6 +52,7 @@ public class Project {
         return worthOfGrant;
     }
 
+    @Column(name = "FUND")
     public String getFund() {
         return fund;
     }
