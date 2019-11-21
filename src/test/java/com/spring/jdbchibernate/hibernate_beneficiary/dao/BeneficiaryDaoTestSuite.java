@@ -28,7 +28,7 @@ public class BeneficiaryDaoTestSuite {
         // then
         Assert.assertEquals(1, beneficiaries.size());
 
-
+        // cleanUp
+        beneficiaryDao.delete(beneficiary);
     }
-
 }
