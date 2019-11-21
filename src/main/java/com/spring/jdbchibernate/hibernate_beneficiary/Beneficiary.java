@@ -1,7 +1,7 @@
 package com.spring.jdbchibernate.hibernate_beneficiary;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "BENEFICIARIES")
@@ -18,6 +18,10 @@ public class Beneficiary {
     public Beneficiary() {
     }
 
+    @Column(name = "ID")
+    @NotNull
+    @Id
+    @GeneratedValue
     public int getId() {
         return id;
     }
