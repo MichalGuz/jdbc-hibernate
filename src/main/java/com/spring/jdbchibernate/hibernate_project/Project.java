@@ -47,6 +47,7 @@ public class Project {
         return worthOfProject;
     }
 
+    @Column(name = "WORTH_OF_GRANT")
     public BigDecimal getWorthOfGrant() {
         return worthOfGrant;
     }
