@@ -1,6 +1,7 @@
 package com.spring.jdbchibernate.hibernate_project.dao;
 
 import com.spring.jdbchibernate.hibernate_project.Project;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -26,5 +27,8 @@ public class ProjectDaoTestSuite {
 
         // when
         List<Project> projects = projectDao.findByTitleAndChecksum(retrievedTitle, retrievedChecksum);
+
+        // then
+        Assert.assertEquals(1, projects.size());
     }
 }
