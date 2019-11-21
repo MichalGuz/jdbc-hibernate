@@ -9,4 +9,16 @@ public class Beneficiary {
         this.name = name;
         this.editorKey = editorKey;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getEditorKey() {
+        return editorKey;
+    }
 }
