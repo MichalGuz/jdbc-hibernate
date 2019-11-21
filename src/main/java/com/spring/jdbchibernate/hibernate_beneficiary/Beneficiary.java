@@ -1,5 +1,10 @@
 package com.spring.jdbchibernate.hibernate_beneficiary;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "BENEFICIARIES")
 public class Beneficiary {
     private int id;
     private String name;
