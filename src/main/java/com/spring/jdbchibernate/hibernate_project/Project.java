@@ -41,6 +41,8 @@ public class Project {
         return title;
     }
 
+    @Column(name = "WORTH_OF_PROJECT")
+    @NotNull
     public BigDecimal getWorthOfProject() {
         return worthOfProject;
     }
