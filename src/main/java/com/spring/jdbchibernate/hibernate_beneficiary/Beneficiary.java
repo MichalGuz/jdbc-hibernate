@@ -26,6 +26,8 @@ public class Beneficiary {
         return id;
     }
 
+    @Column(name = "NAME")
+    @NotNull
     public String getName() {
         return name;
     }
