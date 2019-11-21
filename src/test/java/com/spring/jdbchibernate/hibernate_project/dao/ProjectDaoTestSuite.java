@@ -8,6 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
 import java.nio.file.Watchable;
+import java.util.List;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -22,5 +23,8 @@ public class ProjectDaoTestSuite {
         projectDao.save(project);
         String retrievedTitle = project.getTitle();
         String retrievedChecksum = project.getChecksum();
+
+        // when
+        List<Project> projects = projectDao.findByTitleAndChecksum(retrievedTitle, retrievedChecksum);
     }
 }
