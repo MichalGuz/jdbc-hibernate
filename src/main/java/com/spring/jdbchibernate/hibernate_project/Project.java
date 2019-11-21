@@ -35,6 +35,8 @@ public class Project {
         return id;
     }
 
+    @Column(name = "TITLE")
+    @NotNull
     public String getTitle() {
         return title;
     }
