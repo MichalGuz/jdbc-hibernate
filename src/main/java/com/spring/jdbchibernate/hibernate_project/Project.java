@@ -1,8 +1,13 @@
 package com.spring.jdbchibernate.hibernate_project;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.util.Date;
 
+
+@Entity
+@Table(name = "PROJECTS")
 public class Project {
     private int id;
     private String title;
