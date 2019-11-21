@@ -21,4 +21,16 @@ public class Beneficiary {
     public int getEditorKey() {
         return editorKey;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEditorKey(int editorKey) {
+        this.editorKey = editorKey;
+    }
 }
