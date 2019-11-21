@@ -16,6 +16,11 @@ public class BeneficiaryDaoTestSuite {
     public void testFindByEditorKey() {
         // given
         Beneficiary beneficiary = new Beneficiary("Funds Advisors LTD", 12341234);
+        beneficiaryDao.save(beneficiary);
+        int retrievedEditorKey = beneficiary.getEditorKey();
+
+
+
 
     }
 
