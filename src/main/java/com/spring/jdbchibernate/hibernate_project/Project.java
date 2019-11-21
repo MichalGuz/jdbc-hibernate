@@ -10,4 +10,12 @@ public class Project {
     private BigDecimal worthOfGrant;
     private String fund;
     private Date applied;
+
+    public Project(String title, BigDecimal worthOfProject, BigDecimal worthOfGrant, String fund) {
+        this.title = title;
+        this.fund = fund;
+        this.applied = new Date();
+        this.worthOfProject = worthOfProject;
+        this.worthOfGrant= worthOfGrant;
+    }
 }
