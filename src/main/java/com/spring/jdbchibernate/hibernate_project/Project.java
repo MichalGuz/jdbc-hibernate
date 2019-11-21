@@ -45,4 +45,30 @@ public class Project {
     public Date getApplied() {
         return applied;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setWorthOfProject(BigDecimal worthOfProject) {
+        this.worthOfProject = worthOfProject;
+    }
+
+    public void setWorthOfGrant(BigDecimal worthOfGrant) {
+        this.worthOfGrant = worthOfGrant;
+    }
+
+    public void setFund(String fund) {
+        this.fund = fund;
+    }
+
+    public void setApplied(Date applied) {
+        this.applied = applied;
+    }
 }
+
+
