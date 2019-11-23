@@ -61,4 +61,12 @@ public class Task {
     private void setDuration(int duration) {
         this.duration = duration;
     }
+
+    public TaskFinancialDetails getTaskFinancialDetails() {
+        return taskFinancialDetails;
+    }
+
+    public void setTaskFinancialDetails(TaskFinancialDetails taskFinancialDetails) {
+        this.taskFinancialDetails = taskFinancialDetails;
+    }
 }
