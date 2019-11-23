@@ -45,7 +45,7 @@ public class TaskListDaoTestSuite {
         // given
         Task task1 = new Task("Task for three weeks", 21);
         Task task2 = new Task("Task for one month", 31);
-        Task task3 = new Task("Task fot one year", 365);
+        Task task3 = new Task("Task for one year", 365);
         TaskFinancialDetails tfd1 = new TaskFinancialDetails(new BigDecimal(3000), false);
         TaskFinancialDetails tfd2 = new TaskFinancialDetails(new BigDecimal(4000), false);
         TaskFinancialDetails tfd3 = new TaskFinancialDetails(new BigDecimal(50000), false);
@@ -66,5 +66,8 @@ public class TaskListDaoTestSuite {
 
         // then
         Assert.assertNotEquals(0, id);
+
+        // cleanUp
+        taskListDao.delete(taskList);
     }
 }
