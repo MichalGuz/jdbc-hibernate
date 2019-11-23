@@ -52,5 +52,9 @@ public class TaskListDaoTestSuite {
         task1.setTaskFinancialDetails(tfd1);
         task2.setTaskFinancialDetails(tfd2);
         task3.setTaskFinancialDetails(tfd3);
+        TaskList taskList = new TaskList("List #1", "To do tasks");
+        taskList.getTasks().add(task1);
+        taskList.getTasks().add(task2);
+        taskList.getTasks().add(task3);
     }
 }
