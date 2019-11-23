@@ -70,31 +70,31 @@ public class Project {
         return checksum;
     }
 
-    public void setChecksum(String checksum) {
+    private void setChecksum(String checksum) {
         this.checksum = checksum;
     }
 
-    public void setId(int id) {
+    private void setId(int id) {
         this.id = id;
     }
 
-    public void setTitle(String title) {
+    private void setTitle(String title) {
         this.title = title;
     }
 
-    public void setWorthOfProject(BigDecimal worthOfProject) {
+    private void setWorthOfProject(BigDecimal worthOfProject) {
         this.worthOfProject = worthOfProject;
     }
 
-    public void setWorthOfGrant(BigDecimal worthOfGrant) {
-        this.worthOfGrant = worthOfGrant;
-    }
-
-    public void setFund(String fund) {
+    private void setFund(String fund) {
         this.fund = fund;
     }
 
-    public void setApplied(Date applied) {
+    private void setWorthOfGrant(BigDecimal worthOfGrant) {
+        this.worthOfGrant = worthOfGrant;
+    }
+
+    private void setApplied(Date applied) {
         this.applied = applied;
     }
 }
