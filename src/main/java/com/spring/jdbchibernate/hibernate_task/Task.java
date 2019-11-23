@@ -62,6 +62,7 @@ public class Task {
         this.duration = duration;
     }
 
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     public TaskFinancialDetails getTaskFinancialDetails() {
         return taskFinancialDetails;
     }
