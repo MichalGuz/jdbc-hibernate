@@ -31,6 +31,7 @@ public class TaskFinancialDetails {
         return price;
     }
 
+    @Column(name = "PAID")
     public boolean isPaid() {
         return paid;
     }
