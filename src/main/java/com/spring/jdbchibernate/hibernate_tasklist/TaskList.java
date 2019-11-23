@@ -1,7 +1,11 @@
 package com.spring.jdbchibernate.hibernate_tasklist;
 
+import com.spring.jdbchibernate.hibernate_task.Task;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "TASKLISTS")
@@ -9,7 +13,7 @@ public class TaskList {
     private int id;
     private String listName;
     private String description;
-
+    private List<Task> tasks = new ArrayList<>();
 
     public TaskList(String listName, String description) {
         this.listName = listName;
