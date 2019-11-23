@@ -18,5 +18,6 @@ public class TaskFinancialDetailsDaoTestSuite {
         // given
         TaskFinancialDetails taskFinancialDetails = new TaskFinancialDetails(new BigDecimal(115), false);
         taskFinacialDetailsDao.save(taskFinancialDetails);
+        int id = taskFinancialDetails.getId();
     }
 }
