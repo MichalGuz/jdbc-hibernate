@@ -74,6 +74,4 @@ public class Task {
     public void setTaskFinancialDetails(TaskFinancialDetails taskFinancialDetails) {
         this.taskFinancialDetails = taskFinancialDetails;
     }
-
-
 }
