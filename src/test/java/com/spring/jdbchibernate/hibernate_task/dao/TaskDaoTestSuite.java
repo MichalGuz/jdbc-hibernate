@@ -52,4 +52,9 @@ public class TaskDaoTestSuite {
         // cleanUp
         taskDao.delete(task);
     }
+
+    @Test
+    public void testTaskDaoSaveWithFinancialDetails() {
+
+    }
 }
