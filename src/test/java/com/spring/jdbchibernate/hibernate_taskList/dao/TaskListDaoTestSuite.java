@@ -48,6 +48,9 @@ public class TaskListDaoTestSuite {
         Task task3 = new Task("Task fot one year", 365);
         TaskFinancialDetails tfd1 = new TaskFinancialDetails(new BigDecimal(3000), false);
         TaskFinancialDetails tfd2 = new TaskFinancialDetails(new BigDecimal(4000), false);
-        TaskFinancialDetails tfd3 = new TaskFinancialDetails(new BigDecimal(50000), false)
+        TaskFinancialDetails tfd3 = new TaskFinancialDetails(new BigDecimal(50000), false);
+        task1.setTaskFinancialDetails(tfd1);
+        task2.setTaskFinancialDetails(tfd2);
+        task3.setTaskFinancialDetails(tfd3);
     }
 }
