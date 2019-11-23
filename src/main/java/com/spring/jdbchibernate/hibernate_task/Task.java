@@ -1,5 +1,7 @@
 package com.spring.jdbchibernate.hibernate_task;
 
+import com.spring.jdbchibernate.hibernate_tasklist.TaskList;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
@@ -12,6 +14,7 @@ public class Task {
     private Date created;
     private int duration;
     private TaskFinancialDetails taskFinancialDetails;
+    private TaskList taskList;
 
     public Task(String description, int duration) {
         this.description = description;
@@ -71,4 +74,6 @@ public class Task {
     public void setTaskFinancialDetails(TaskFinancialDetails taskFinancialDetails) {
         this.taskFinancialDetails = taskFinancialDetails;
     }
+
+
 }
