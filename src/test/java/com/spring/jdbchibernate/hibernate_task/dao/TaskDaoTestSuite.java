@@ -60,5 +60,9 @@ public class TaskDaoTestSuite {
         // given
         Task task = new Task(DESCRIPTION, 7);
         task.setTaskFinancialDetails(new TaskFinancialDetails(new BigDecimal(300), false));
+
+        // when
+        taskDao.save(task);
+        int id = task.getId();
     }
 }
