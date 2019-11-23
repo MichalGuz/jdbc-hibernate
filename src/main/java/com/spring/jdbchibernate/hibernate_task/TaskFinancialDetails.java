@@ -13,4 +13,16 @@ public class TaskFinancialDetails {
         this.price = price;
         this.paid = paid;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public boolean isPaid() {
+        return paid;
+    }
 }
