@@ -53,6 +53,9 @@ public class TaskList {
         this.description = description;
     }
 
+    @OneToMany(
+            targetEntity = Task.class
+    )
     public List<Task> getTasks() {
         return tasks;
     }
