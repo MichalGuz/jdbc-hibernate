@@ -54,7 +54,8 @@ public class TaskList {
     }
 
     @OneToMany(
-            targetEntity = Task.class
+            targetEntity = Task.class,
+            mappedBy = "taskList"
     )
     public List<Task> getTasks() {
         return tasks;
