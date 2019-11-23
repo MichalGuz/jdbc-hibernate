@@ -62,5 +62,6 @@ public class TaskListDaoTestSuite {
 
         // when
         taskListDao.save(taskList);
+        int id = taskList.getId();
     }
 }
