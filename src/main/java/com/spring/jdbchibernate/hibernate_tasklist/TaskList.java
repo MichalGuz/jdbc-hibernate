@@ -55,7 +55,8 @@ public class TaskList {
 
     @OneToMany(
             targetEntity = Task.class,
-            mappedBy = "taskList"
+            mappedBy = "taskList",
+            cascade = CascadeType.ALL
     )
     public List<Task> getTasks() {
         return tasks;
