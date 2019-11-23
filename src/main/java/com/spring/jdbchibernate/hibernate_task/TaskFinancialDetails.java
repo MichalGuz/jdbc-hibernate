@@ -25,4 +25,16 @@ public class TaskFinancialDetails {
     public boolean isPaid() {
         return paid;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
+    public void setPaid(boolean paid) {
+        this.paid = paid;
+    }
 }
