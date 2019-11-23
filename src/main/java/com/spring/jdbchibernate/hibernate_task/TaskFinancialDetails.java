@@ -1,7 +1,11 @@
 package com.spring.jdbchibernate.hibernate_task;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 
+@Entity
+@Table(name = "TASK_FINANCIALS")
 public class TaskFinancialDetails {
     private int id;
     private BigDecimal price;
