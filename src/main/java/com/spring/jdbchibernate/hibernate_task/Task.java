@@ -75,6 +75,7 @@ public class Task {
         this.taskFinancialDetails = taskFinancialDetails;
     }
 
+    @ManyToOne
     public TaskList getTaskList() {
         return taskList;
     }
