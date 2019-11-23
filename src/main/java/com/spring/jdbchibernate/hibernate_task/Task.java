@@ -11,6 +11,7 @@ public class Task {
     private String description;
     private Date created;
     private int duration;
+    private TaskFinancialDetails taskFinancialDetails;
 
     public Task(String description, int duration) {
         this.description = description;
