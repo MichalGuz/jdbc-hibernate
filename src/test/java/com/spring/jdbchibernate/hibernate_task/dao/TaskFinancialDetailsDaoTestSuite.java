@@ -27,5 +27,8 @@ public class TaskFinancialDetailsDaoTestSuite {
 
         // then
         Assert.assertEquals(1, results.size());
+
+        // cleanUp
+        taskFinacialDetailsDao.delete(taskFinancialDetails);
     }
 }
