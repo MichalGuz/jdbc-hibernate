@@ -17,5 +17,6 @@ public class TaskFinancialDetailsDaoTestSuite {
     public void testFindByPaid() {
         // given
         TaskFinancialDetails taskFinancialDetails = new TaskFinancialDetails(new BigDecimal(115), false);
+        taskFinacialDetailsDao.save(taskFinancialDetails);
     }
 }
