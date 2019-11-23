@@ -1,6 +1,7 @@
 package com.spring.jdbchibernate.hibernate_task.dao;
 
 import com.spring.jdbchibernate.hibernate_task.Task;
+import com.spring.jdbchibernate.hibernate_task.TaskFinancialDetails;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
@@ -55,6 +57,8 @@ public class TaskDaoTestSuite {
 
     @Test
     public void testTaskDaoSaveWithFinancialDetails() {
-
+        // given
+        Task task = new Task(DESCRIPTION, 7);
+        task.setTaskFinancialDetails(new TaskFinancialDetails(new BigDecimal(300), false));
     }
 }
