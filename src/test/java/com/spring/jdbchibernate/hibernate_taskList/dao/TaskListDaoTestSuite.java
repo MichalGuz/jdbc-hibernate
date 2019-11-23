@@ -59,5 +59,8 @@ public class TaskListDaoTestSuite {
         task1.setTaskList(taskList);
         task2.setTaskList(taskList);
         task3.setTaskList(taskList);
+
+        // when
+        taskListDao.save(taskList);
     }
 }
