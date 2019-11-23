@@ -1,5 +1,6 @@
 package com.spring.jdbchibernate.hibernate_taskList.dao;
 
+import com.spring.jdbchibernate.hibernate_task.Task;
 import com.spring.jdbchibernate.hibernate_tasklist.TaskList;
 import com.spring.jdbchibernate.hibernate_tasklist.dao.TaskListDao;
 import org.junit.Assert;
@@ -39,6 +40,10 @@ public class TaskListDaoTestSuite {
 
     @Test
     public void testTaskListDaoSaveWithTasks() {
+        // given
+        Task task1 = new Task("Task for three weeks", 21);
+        Task task2 = new Task("Task for one month", 31);
+        Task task3 = new Task("Task fot one year", 365);
 
     }
 }
