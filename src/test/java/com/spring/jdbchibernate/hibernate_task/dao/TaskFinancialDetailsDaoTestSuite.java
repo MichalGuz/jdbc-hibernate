@@ -1,6 +1,7 @@
 package com.spring.jdbchibernate.hibernate_task.dao;
 
 import com.spring.jdbchibernate.hibernate_task.TaskFinancialDetails;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -23,5 +24,8 @@ public class TaskFinancialDetailsDaoTestSuite {
 
         // when
         List<TaskFinancialDetails> results = taskFinacialDetailsDao.findByPaid(false);
+
+        // then
+        Assert.assertEquals(1, results.size());
     }
 }
