@@ -1,6 +1,7 @@
 package com.spring.jdbchibernate.hibernate_taskList.dao;
 
 import com.spring.jdbchibernate.hibernate_task.Task;
+import com.spring.jdbchibernate.hibernate_task.TaskFinancialDetails;
 import com.spring.jdbchibernate.hibernate_tasklist.TaskList;
 import com.spring.jdbchibernate.hibernate_tasklist.dao.TaskListDao;
 import org.junit.Assert;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @SpringBootTest
@@ -44,6 +46,8 @@ public class TaskListDaoTestSuite {
         Task task1 = new Task("Task for three weeks", 21);
         Task task2 = new Task("Task for one month", 31);
         Task task3 = new Task("Task fot one year", 365);
-
+        TaskFinancialDetails tfd1 = new TaskFinancialDetails(new BigDecimal(3000), false);
+        TaskFinancialDetails tfd2 = new TaskFinancialDetails(new BigDecimal(4000), false);
+        TaskFinancialDetails tfd3 = new TaskFinancialDetails(new BigDecimal(50000), false)
     }
 }
