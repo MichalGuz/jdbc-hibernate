@@ -9,5 +9,15 @@ public class ProjectEvaluation {
     private int finAnaScore;
     private boolean positive;
 
+    public ProjectEvaluation(boolean formal, boolean meritoric, int meritScore, boolean financialAnalysis, int finAnaScore, boolean positive) {
+        this.formal = formal;
+        this.meritoric = meritoric;
+        this.meritScore = meritScore;
+        this.financialAnalysis = financialAnalysis;
+        this.finAnaScore = finAnaScore;
+        this.positive = positive;
+    }
 
+    public ProjectEvaluation() {
+    }
 }
