@@ -1,5 +1,11 @@
 package com.spring.jdbchibernate.hibernate_project;
 
+import javax.persistence.CollectionTable;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "PROJECT_EVALUATION")
 public class ProjectEvaluation {
     private int id;
     private boolean formal;
