@@ -26,5 +26,8 @@ public class ProjectEvaluationDaoTestSuite {
 
         // then
         Assert.assertEquals(1, resultList);
+
+        // cleanUp
+        projectEvaluationDao.delete(projectEvaluation);
     }
 }
