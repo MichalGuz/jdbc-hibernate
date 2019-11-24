@@ -45,6 +45,7 @@ public class ProjectEvaluation {
         return meritoric;
     }
 
+    @Column(name = "MERIT_SCORE")
     public int getMeritScore() {
         return meritScore;
     }
