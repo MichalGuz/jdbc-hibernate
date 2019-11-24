@@ -40,6 +40,7 @@ public class ProjectEvaluation {
         return formal;
     }
 
+    @Column(name = "MERITORIC")
     public boolean isMeritoric() {
         return meritoric;
     }
