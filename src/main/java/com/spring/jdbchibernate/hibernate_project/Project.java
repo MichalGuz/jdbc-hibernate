@@ -40,6 +40,7 @@ public class Project {
     }
 
     @Column(name = "PROJECT_NUMBER", unique = true)
+    @NotNull
     public int getProjectNumber() {
         return projectNumber;
     }
