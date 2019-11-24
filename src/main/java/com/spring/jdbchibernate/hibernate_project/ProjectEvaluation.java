@@ -55,6 +55,7 @@ public class ProjectEvaluation {
         return financialAnalysis;
     }
 
+    @Column
     public int getFinAnaScore() {
         return finAnaScore;
     }
