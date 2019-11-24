@@ -50,6 +50,7 @@ public class ProjectEvaluation {
         return meritScore;
     }
 
+    @Column(name = "FINANCIAL_ANALYSIS")
     public boolean isFinancialAnalysis() {
         return financialAnalysis;
     }
