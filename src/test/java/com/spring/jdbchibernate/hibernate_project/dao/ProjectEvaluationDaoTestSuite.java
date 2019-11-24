@@ -6,6 +6,8 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.List;
+
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class ProjectEvaluationDaoTestSuite {
@@ -17,5 +19,8 @@ public class ProjectEvaluationDaoTestSuite {
         ProjectEvaluation projectEvaluation = new ProjectEvaluation(true, true, 45, true, 15, true);
         projectEvaluationDao.save(projectEvaluation);
         int id = projectEvaluation.getId();
+
+        // when
+        List<ProjectEvaluation> resultList = projectEvaluationDao.findByPositive(true);
     }
 }
