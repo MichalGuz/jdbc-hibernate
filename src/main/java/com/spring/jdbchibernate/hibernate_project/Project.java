@@ -10,6 +10,7 @@ import java.util.Date;
 @Table(name = "PROJECTS")
 public class Project {
     private int id;
+    private int projectNumber;
     private String title;
     private BigDecimal worthOfProject;
     private BigDecimal worthOfGrant;
@@ -17,7 +18,8 @@ public class Project {
     private Date applied;
     private String checksum;
 
-    public Project(String title, BigDecimal worthOfProject, BigDecimal worthOfGrant, String fund, String checksum) {
+    public Project(int projectNumber, String title, BigDecimal worthOfProject, BigDecimal worthOfGrant, String fund, String checksum) {
+        this.projectNumber = projectNumber;
         this.title = title;
         this.fund = fund;
         this.applied = new Date();
