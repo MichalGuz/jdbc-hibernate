@@ -21,7 +21,7 @@ public class ProjectDaoTestSuite {
     @Test
     public void testFindByTitleAndChecksum(){
         // given
-        Project project = new Project("Title #1", new BigDecimal(2000000), new BigDecimal(1500000), "EFFR", "1234123456");
+        Project project = new Project(2019010001, "Title #1", new BigDecimal(2000000), new BigDecimal(1500000), "EFFR", "1234123456");
         projectDao.save(project);
         String retrievedTitle = project.getTitle();
         String retrievedChecksum = project.getChecksum();
