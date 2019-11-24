@@ -27,7 +27,7 @@ public class ProjectEvaluationDaoTestSuite {
         List<ProjectEvaluation> resultList = projectEvaluationDao.findByPositive(true);
 
         // then
-        Assert.assertEquals(1, resultList);
+        Assert.assertEquals(1, resultList.size());
 
         // cleanUp
         projectEvaluationDao.delete(projectEvaluation);
