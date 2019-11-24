@@ -34,6 +34,8 @@ public class ProjectEvaluation {
         return id;
     }
 
+    @Column(name = "FORMAL")
+    @NotNull
     public boolean isFormal() {
         return formal;
     }
