@@ -72,7 +72,7 @@ public class Project {
         return applied;
     }
 
-    @Column(name = "CHECKSUM")
+    @Column(name = "CHECKSUM", unique = true)
     @NotNull
     public String getChecksum() {
         return checksum;
@@ -84,6 +84,10 @@ public class Project {
 
     private void setId(int id) {
         this.id = id;
+    }
+
+    private void setProjectNumber(int projectNumber) {
+        this.projectNumber = projectNumber;
     }
 
     private void setTitle(String title) {
