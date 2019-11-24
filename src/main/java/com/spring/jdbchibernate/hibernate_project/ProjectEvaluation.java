@@ -20,4 +20,32 @@ public class ProjectEvaluation {
 
     public ProjectEvaluation() {
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public boolean isFormal() {
+        return formal;
+    }
+
+    public boolean isMeritoric() {
+        return meritoric;
+    }
+
+    public int getMeritScore() {
+        return meritScore;
+    }
+
+    public boolean isFinancialAnalysis() {
+        return financialAnalysis;
+    }
+
+    public int getFinAnaScore() {
+        return finAnaScore;
+    }
+
+    public boolean isPositive() {
+        return positive;
+    }
 }
