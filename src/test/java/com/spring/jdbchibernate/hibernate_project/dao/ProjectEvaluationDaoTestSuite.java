@@ -1,6 +1,7 @@
 package com.spring.jdbchibernate.hibernate_project.dao;
 
 import com.spring.jdbchibernate.hibernate_project.ProjectEvaluation;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -22,5 +23,8 @@ public class ProjectEvaluationDaoTestSuite {
 
         // when
         List<ProjectEvaluation> resultList = projectEvaluationDao.findByPositive(true);
+
+        // then
+        Assert.assertEquals(1, resultList);
     }
 }
