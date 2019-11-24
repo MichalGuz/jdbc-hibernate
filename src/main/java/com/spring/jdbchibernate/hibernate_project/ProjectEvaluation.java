@@ -1,8 +1,7 @@
 package com.spring.jdbchibernate.hibernate_project;
 
-import javax.persistence.CollectionTable;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "PROJECT_EVALUATION")
@@ -27,6 +26,10 @@ public class ProjectEvaluation {
     public ProjectEvaluation() {
     }
 
+    @Id
+    @GeneratedValue
+    @NotNull
+    @Column(name = "ID")
     public int getId() {
         return id;
     }
