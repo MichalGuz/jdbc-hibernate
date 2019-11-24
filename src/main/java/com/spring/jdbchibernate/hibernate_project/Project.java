@@ -39,6 +39,11 @@ public class Project {
         return id;
     }
 
+    @Column(name = "PROJECT_NUMBER", unique = true)
+    public int getProjectNumber() {
+        return projectNumber;
+    }
+
     @Column(name = "TITLE")
     @NotNull
     public String getTitle() {
