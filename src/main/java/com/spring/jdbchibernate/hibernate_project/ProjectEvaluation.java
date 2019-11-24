@@ -48,4 +48,32 @@ public class ProjectEvaluation {
     public boolean isPositive() {
         return positive;
     }
+
+    private void setId(int id) {
+        this.id = id;
+    }
+
+    private void setFormal(boolean formal) {
+        this.formal = formal;
+    }
+
+    private void setMeritoric(boolean meritoric) {
+        this.meritoric = meritoric;
+    }
+
+    private void setMeritScore(int meritScore) {
+        this.meritScore = meritScore;
+    }
+
+    private void setFinancialAnalysis(boolean financialAnalysis) {
+        this.financialAnalysis = financialAnalysis;
+    }
+
+    private void setFinAnaScore(int finAnaScore) {
+        this.finAnaScore = finAnaScore;
+    }
+
+    private void setPositive(boolean positive) {
+        this.positive = positive;
+    }
 }
