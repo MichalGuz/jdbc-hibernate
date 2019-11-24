@@ -55,11 +55,13 @@ public class ProjectEvaluation {
         return financialAnalysis;
     }
 
-    @Column
+    @Column(name = "FIN_ANA_SCORE")
     public int getFinAnaScore() {
         return finAnaScore;
     }
 
+    @Column(name = "POSITIVE")
+    @NotNull
     public boolean isPositive() {
         return positive;
     }
