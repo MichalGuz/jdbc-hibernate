@@ -46,5 +46,8 @@ public class ProjectDaoTestSuite {
         // when
         projectDao.save(PROJECT);
         int id = PROJECT.getId();
+
+        // then
+        Assert.assertNotEquals(0, id);
     }
 }
