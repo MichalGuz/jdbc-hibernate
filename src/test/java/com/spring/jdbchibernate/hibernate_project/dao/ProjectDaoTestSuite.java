@@ -1,6 +1,7 @@
 package com.spring.jdbchibernate.hibernate_project.dao;
 
 import com.spring.jdbchibernate.hibernate_project.Project;
+import com.spring.jdbchibernate.hibernate_project.ProjectEvaluation;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,14 +18,14 @@ public class ProjectDaoTestSuite {
 
     @Autowired
     ProjectDao projectDao;
+    private static Project PROJECT = new Project("PL2019010200001", "Title #1", new BigDecimal(2000000), new BigDecimal(1500000), "EFFR", "1234123456");
 
     @Test
     public void testFindByTitleAndChecksum(){
         // given
-        Project project = new Project("PL2019010200001", "Title #1", new BigDecimal(2000000), new BigDecimal(1500000), "EFFR", "1234123456");
-        projectDao.save(project);
-        String retrievedTitle = project.getTitle();
-        String retrievedChecksum = project.getChecksum();
+        projectDao.save(PROJECT);
+        String retrievedTitle = PROJECT.getTitle();
+        String retrievedChecksum = PROJECT.getChecksum();
 
         // when
         List<Project> projects = projectDao.findByTitleAndChecksum(retrievedTitle, retrievedChecksum);
@@ -33,11 +34,12 @@ public class ProjectDaoTestSuite {
         Assert.assertEquals(1, projects.size());
 
         // cleanUp
-        projectDao.delete(project);
+        projectDao.delete(PROJECT);
     }
 
     @Test
     public void testProjectDaoSaveWithProjectEvaluation() {
+        // given
 
     }
 }
