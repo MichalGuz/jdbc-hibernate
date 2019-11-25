@@ -116,6 +116,10 @@ public class Project {
     private void setApplied(Date applied) {
         this.applied = applied;
     }
+
+    public void setProjectEvaluation(ProjectEvaluation projectEvaluation) {
+        this.projectEvaluation = projectEvaluation;
+    }
 }
 
 
