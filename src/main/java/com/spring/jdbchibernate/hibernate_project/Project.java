@@ -80,6 +80,11 @@ public class Project {
         return checksum;
     }
 
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    public ProjectEvaluation getProjectEvaluation() {
+        return projectEvaluation;
+    }
+
     private void setChecksum(String checksum) {
         this.checksum = checksum;
     }
