@@ -48,7 +48,6 @@ public class Beneficiary {
             mappedBy = "beneficiary",
             cascade = CascadeType.ALL,
             fetch = FetchType.LAZY)
-
     public List<Project> getProjects() {
         return projects;
     }
