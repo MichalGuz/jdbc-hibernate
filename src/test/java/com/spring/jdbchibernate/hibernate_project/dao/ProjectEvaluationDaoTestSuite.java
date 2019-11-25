@@ -30,6 +30,6 @@ public class ProjectEvaluationDaoTestSuite {
         Assert.assertEquals(1, resultList.size());
 
         // cleanUp
-        projectEvaluationDao.delete(projectEvaluation);
+        projectEvaluationDao.deleteById(id);
     }
 }
