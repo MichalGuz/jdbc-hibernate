@@ -43,6 +43,12 @@ public class Beneficiary {
         return editorKey;
     }
 
+    @OneToMany(
+            targetEntity = Project.class,
+            mappedBy = "beneficiary",
+            cascade = CascadeType.ALL,
+            fetch = FetchType.LAZY)
+
     public List<Project> getProjects() {
         return projects;
     }
