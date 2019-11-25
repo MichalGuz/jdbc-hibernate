@@ -49,5 +49,7 @@ public class BeneficiaryDaoTestSuite {
         Beneficiary beneficiary = new Beneficiary("Funds Advisors LTD", 12341234);
         beneficiary.getProjects().add(projectPositive);
         beneficiary.getProjects().add(projectNegative);
+        projectPositive.setBeneficiary(beneficiary);
+        projectNegative.setBeneficiary(beneficiary);
     }
 }
