@@ -11,7 +11,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
-import java.util.Date;
 import java.util.List;
 
 @SpringBootTest
@@ -47,5 +46,8 @@ public class BeneficiaryDaoTestSuite {
         ProjectEvaluation projectNegativeEval =  new ProjectEvaluation(true, true, 30, false, 0, false);
         projectPositive.setProjectEvaluation(projectPositiveEval);
         projectNegative.setProjectEvaluation(projectNegativeEval);
+        Beneficiary beneficiary = new Beneficiary("Funds Advisors LTD", 12341234);
+        beneficiary.getProjects().add(projectPositive);
+        beneficiary.getProjects().add(projectNegative);
     }
 }
