@@ -58,5 +58,8 @@ public class BeneficiaryDaoTestSuite {
 
         // then
         Assert.assertNotEquals(0, id);
+
+        // cleanUp
+        beneficiaryDao.deleteById(id);
     }
 }
