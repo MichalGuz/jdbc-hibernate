@@ -81,6 +81,7 @@ public class Project {
     }
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "PROJECT_EVALUATION")
     public ProjectEvaluation getProjectEvaluation() {
         return projectEvaluation;
     }
