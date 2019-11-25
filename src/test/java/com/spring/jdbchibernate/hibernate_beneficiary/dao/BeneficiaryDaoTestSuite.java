@@ -55,5 +55,8 @@ public class BeneficiaryDaoTestSuite {
         // when
         beneficiaryDao.save(beneficiary);
         int id = beneficiary.getId();
+
+        // then
+        Assert.assertNotEquals(0, id);
     }
 }
