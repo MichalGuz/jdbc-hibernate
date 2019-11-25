@@ -43,6 +43,10 @@ public class Beneficiary {
         return editorKey;
     }
 
+    public List<Project> getProjects() {
+        return projects;
+    }
+
     private void setId(int id) {
         this.id = id;
     }
@@ -53,5 +57,9 @@ public class Beneficiary {
 
     private void setEditorKey(int editorKey) {
         this.editorKey = editorKey;
+    }
+
+    public void setProjects(List<Project> projects) {
+        this.projects = projects;
     }
 }
