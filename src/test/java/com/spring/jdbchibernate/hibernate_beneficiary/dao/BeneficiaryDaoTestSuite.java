@@ -2,6 +2,7 @@ package com.spring.jdbchibernate.hibernate_beneficiary.dao;
 
 import com.spring.jdbchibernate.hibernate_beneficiary.Beneficiary;
 import com.spring.jdbchibernate.hibernate_project.Project;
+import com.spring.jdbchibernate.hibernate_project.ProjectEvaluation;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -42,6 +43,9 @@ public class BeneficiaryDaoTestSuite {
         // given
         Project projectPositive = new Project("20190202PL", "Good project", new BigDecimal(1000000), new BigDecimal(850000), "EFRR", "342662");
         Project projectNegative = new Project("20190203PL", "Bad project", new BigDecimal(1000000), new BigDecimal(900000), "EFRR", "342652");
-
+        ProjectEvaluation projectPositiveEval =  new ProjectEvaluation(true, true, 30, true, 45, true);
+        ProjectEvaluation projectNegativeEval =  new ProjectEvaluation(true, true, 30, false, 0, false);
+        projectPositive.setProjectEvaluation(projectPositiveEval);
+        projectNegative.setProjectEvaluation(projectNegativeEval);
     }
 }
