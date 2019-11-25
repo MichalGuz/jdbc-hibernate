@@ -1,7 +1,11 @@
 package com.spring.jdbchibernate.hibernate_beneficiary;
 
+import com.spring.jdbchibernate.hibernate_project.Project;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "BENEFICIARIES")
@@ -9,6 +13,7 @@ public class Beneficiary {
     private int id;
     private String name;
     private int editorKey;
+    private List<Project> projects = new ArrayList<>();
 
     public Beneficiary(String name, int editorKey) {
         this.name = name;
