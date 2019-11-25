@@ -1,5 +1,7 @@
 package com.spring.jdbchibernate.hibernate_project;
 
+import com.spring.jdbchibernate.hibernate_beneficiary.Beneficiary;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
@@ -19,6 +21,8 @@ public class Project {
     private String checksum;
 
     private ProjectEvaluation projectEvaluation;
+
+    private Beneficiary beneficiary;
 
     public Project(String projectNumber, String title, BigDecimal worthOfProject, BigDecimal worthOfGrant, String fund, String checksum) {
         this.projectNumber = projectNumber;
