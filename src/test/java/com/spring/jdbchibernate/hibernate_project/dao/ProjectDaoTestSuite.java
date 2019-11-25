@@ -48,5 +48,8 @@ public class ProjectDaoTestSuite {
 
         // then
         Assert.assertNotEquals(0, id);
+
+        // cleanUp
+        projectDao.deleteById(id);
     }
 }
