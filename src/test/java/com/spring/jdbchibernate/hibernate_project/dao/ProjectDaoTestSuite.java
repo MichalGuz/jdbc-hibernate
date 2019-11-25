@@ -35,4 +35,9 @@ public class ProjectDaoTestSuite {
         // cleanUp
         projectDao.delete(project);
     }
+
+    @Test
+    public void testProjectDaoSaveWithProjectEvaluation() {
+
+    }
 }
