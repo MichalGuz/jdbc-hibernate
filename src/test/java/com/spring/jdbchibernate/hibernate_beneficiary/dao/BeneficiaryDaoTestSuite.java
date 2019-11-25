@@ -33,4 +33,9 @@ public class BeneficiaryDaoTestSuite {
         // cleanUp
         beneficiaryDao.delete(beneficiary);
     }
+
+    @Test
+    public void testBeneficiaryDaoSaveWithProjects() {
+
+    }
 }
