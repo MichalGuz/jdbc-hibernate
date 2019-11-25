@@ -90,6 +90,10 @@ public class Project {
         return projectEvaluation;
     }
 
+    public Beneficiary getBeneficiary() {
+        return beneficiary;
+    }
+
     private void setChecksum(String checksum) {
         this.checksum = checksum;
     }
@@ -124,6 +128,10 @@ public class Project {
 
     public void setProjectEvaluation(ProjectEvaluation projectEvaluation) {
         this.projectEvaluation = projectEvaluation;
+    }
+
+    public void setBeneficiary(Beneficiary beneficiary) {
+        this.beneficiary = beneficiary;
     }
 }
 
