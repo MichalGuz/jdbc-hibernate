@@ -51,5 +51,9 @@ public class BeneficiaryDaoTestSuite {
         beneficiary.getProjects().add(projectNegative);
         projectPositive.setBeneficiary(beneficiary);
         projectNegative.setBeneficiary(beneficiary);
+
+        // when
+        beneficiaryDao.save(beneficiary);
+        int id = beneficiary.getId();
     }
 }
