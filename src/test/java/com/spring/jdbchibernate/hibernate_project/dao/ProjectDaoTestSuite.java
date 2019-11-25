@@ -40,6 +40,6 @@ public class ProjectDaoTestSuite {
     @Test
     public void testProjectDaoSaveWithProjectEvaluation() {
         // given
-
+        PROJECT.setProjectEvaluation(new ProjectEvaluation(true, true, 18, true, 30, true));
     }
 }
