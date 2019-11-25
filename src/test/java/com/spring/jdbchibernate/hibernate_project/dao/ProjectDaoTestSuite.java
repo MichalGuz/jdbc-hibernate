@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
+import java.nio.file.Path;
 import java.util.List;
 
 @SpringBootTest
@@ -41,5 +42,9 @@ public class ProjectDaoTestSuite {
     public void testProjectDaoSaveWithProjectEvaluation() {
         // given
         PROJECT.setProjectEvaluation(new ProjectEvaluation(true, true, 18, true, 30, true));
+
+        // when
+        projectDao.save(PROJECT);
+        int id = PROJECT.getId();
     }
 }
