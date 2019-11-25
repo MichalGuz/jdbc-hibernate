@@ -18,6 +18,8 @@ public class Project {
     private Date applied;
     private String checksum;
 
+    private ProjectEvaluation projectEvaluation;
+
     public Project(String projectNumber, String title, BigDecimal worthOfProject, BigDecimal worthOfGrant, String fund, String checksum) {
         this.projectNumber = projectNumber;
         this.title = title;
