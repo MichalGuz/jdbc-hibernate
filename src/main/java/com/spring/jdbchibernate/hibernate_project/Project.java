@@ -90,6 +90,8 @@ public class Project {
         return projectEvaluation;
     }
 
+    @ManyToOne
+    @JoinColumn(name = "BENEFICIARY_ID")
     public Beneficiary getBeneficiary() {
         return beneficiary;
     }
