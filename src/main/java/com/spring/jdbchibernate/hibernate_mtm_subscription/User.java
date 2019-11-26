@@ -1,5 +1,10 @@
 package com.spring.jdbchibernate.hibernate_mtm_subscription;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "USERS")
 public class User {
     private int id;
     private String firstname;
