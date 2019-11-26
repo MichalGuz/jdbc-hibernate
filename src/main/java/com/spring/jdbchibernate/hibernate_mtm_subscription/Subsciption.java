@@ -10,4 +10,12 @@ public class Subsciption {
 
     public Subsciption() {
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
