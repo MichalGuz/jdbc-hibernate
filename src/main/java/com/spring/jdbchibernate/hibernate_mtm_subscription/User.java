@@ -43,6 +43,11 @@ public class User {
     }
 
     @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "JOIN_SUBSCRIPTION_USER",
+            joinColumns = {@JoinColumn(name = "USER_ID", referencedColumnName = "USER_ID")},
+            inverseJoinColumns = {@JoinColumn(name = "SUBSCRIPTION_ID", referencedColumnName = "SUBSCRIPTION_ID")}
+    )
     public List<Subscription> getSubscriptions() {
         return subscriptions;
     }
