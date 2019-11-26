@@ -26,6 +26,8 @@ public class User {
         return id;
     }
 
+    @Column(name = "FIRSTNAME)")
+    @NotNull
     public String getFirstname() {
         return firstname;
     }
