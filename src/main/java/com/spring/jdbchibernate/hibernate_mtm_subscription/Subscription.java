@@ -2,12 +2,16 @@ package com.spring.jdbchibernate.hibernate_mtm_subscription;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "SUBSCRIPTIONS")
 public class Subscription {
     private int id;
     private String name;
+
+    private List<User> users = new ArrayList<>();
 
     public Subscription(String name) {
         this.name = name;
