@@ -35,11 +35,14 @@ public class Subscription {
     }
 
 
+    @ManyToMany(
+            cascade = CascadeType.ALL, mappedBy = "subscriptions"
+    )
     public List<User> getUsers() {
         return users;
     }
 
-    public void setUsers(List<User> users) {
+    private void setUsers(List<User> users) {
         this.users = users;
     }
 
