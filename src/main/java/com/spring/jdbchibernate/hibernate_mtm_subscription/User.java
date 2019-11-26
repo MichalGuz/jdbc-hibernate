@@ -42,6 +42,7 @@ public class User {
         return lastname;
     }
 
+    @ManyToMany(cascade = CascadeType.ALL)
     public List<Subscription> getSubscriptions() {
         return subscriptions;
     }
