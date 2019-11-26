@@ -32,6 +32,13 @@ public class User {
         return firstname;
     }
 
+    @Column(name = "LASTNAME")
+    @NotNull
+    private String getLastname() {
+        return lastname;
+    }
+
+
     private void setId(int id) {
         this.id = id;
     }
@@ -44,7 +51,4 @@ public class User {
         this.lastname = lastname;
     }
 
-    private String getLastname() {
-        return lastname;
-    }
 }
