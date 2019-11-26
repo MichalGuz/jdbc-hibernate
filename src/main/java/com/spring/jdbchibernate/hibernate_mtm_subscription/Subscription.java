@@ -5,15 +5,15 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "SUBSCRIPTIONS")
-public class Subsciption {
+public class Subscription {
     private int id;
     private String name;
 
-    public Subsciption(String name) {
+    public Subscription(String name) {
         this.name = name;
     }
 
-    public Subsciption() {
+    public Subscription() {
     }
 
     @Id
