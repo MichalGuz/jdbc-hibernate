@@ -18,12 +18,14 @@ public class Subsciption {
 
     @Id
     @GeneratedValue
-    @Column(name = "SUBSCRIPTION_ID")
+    @Column(name = "SUBSCRIPTION_ID", unique = true)
     @NotNull
     public int getId() {
         return id;
     }
 
+    @Column(name = "SUBSCRIPTION_NAME")
+    @NotNull
     public String getName() {
         return name;
     }
