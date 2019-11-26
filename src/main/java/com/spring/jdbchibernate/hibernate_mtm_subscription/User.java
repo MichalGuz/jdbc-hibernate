@@ -1,7 +1,7 @@
 package com.spring.jdbchibernate.hibernate_mtm_subscription;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "USERS")
@@ -18,6 +18,10 @@ public class User {
     public User() {
     }
 
+    @Id
+    @Column(name = "USER_ID", unique = true)
+    @NotNull
+    @GeneratedValue
     public int getId() {
         return id;
     }
