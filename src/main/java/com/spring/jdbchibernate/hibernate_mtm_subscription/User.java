@@ -58,7 +58,7 @@ public class User {
         this.lastname = lastname;
     }
 
-    public void setSubscriptions(List<Subscription> subscriptions) {
+    private void setSubscriptions(List<Subscription> subscriptions) {
         this.subscriptions = subscriptions;
     }
 }
