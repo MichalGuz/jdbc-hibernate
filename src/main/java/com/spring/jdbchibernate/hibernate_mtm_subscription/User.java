@@ -21,7 +21,19 @@ public class User {
         return firstname;
     }
 
-    public String getLastname() {
+    private void setId(int id) {
+        this.id = id;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    private void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    private String getLastname() {
         return lastname;
     }
 }
