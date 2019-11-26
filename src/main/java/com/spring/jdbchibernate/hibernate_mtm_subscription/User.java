@@ -2,6 +2,8 @@ package com.spring.jdbchibernate.hibernate_mtm_subscription;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "USERS")
@@ -9,6 +11,8 @@ public class User {
     private int id;
     private String firstname;
     private String lastname;
+
+    private List<Subscription> subscriptions = new ArrayList<>();
 
     public User(String firstname, String lastname) {
         this.firstname = firstname;
