@@ -42,6 +42,9 @@ public class User {
         return lastname;
     }
 
+    public List<Subscription> getSubscriptions() {
+        return subscriptions;
+    }
 
     private void setId(int id) {
         this.id = id;
@@ -55,4 +58,7 @@ public class User {
         this.lastname = lastname;
     }
 
+    public void setSubscriptions(List<Subscription> subscriptions) {
+        this.subscriptions = subscriptions;
+    }
 }
