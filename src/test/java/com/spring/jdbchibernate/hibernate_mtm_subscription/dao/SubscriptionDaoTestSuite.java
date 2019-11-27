@@ -33,5 +33,10 @@ public class SubscriptionDaoTestSuite {
 
         adamNovak.getSubscriptions().add(news);
         adamNovak.getSubscriptions().add(sport);
+        marthaLong.getSubscriptions().add(news);
+        marthaLong.getSubscriptions().add(music);
+        lauraJones.getSubscriptions().add(news);
+        lauraJones.getSubscriptions().add(sport);
+        lauraJones.getSubscriptions().add(music);
     }
 }
