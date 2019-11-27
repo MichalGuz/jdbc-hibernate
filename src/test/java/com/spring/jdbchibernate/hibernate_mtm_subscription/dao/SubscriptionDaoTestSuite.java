@@ -38,5 +38,14 @@ public class SubscriptionDaoTestSuite {
         lauraJones.getSubscriptions().add(news);
         lauraJones.getSubscriptions().add(sport);
         lauraJones.getSubscriptions().add(music);
+
+        // when
+        subscriptionDao.save(news);
+        int newsId = news.getId();
+        subscriptionDao.save(sport);
+        int sportId = sport.getId();
+        subscriptionDao.save(music);
+        int musicId = music.getId();
+
     }
 }
