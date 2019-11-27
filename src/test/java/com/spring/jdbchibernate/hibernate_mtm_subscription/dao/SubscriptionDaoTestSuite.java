@@ -23,5 +23,12 @@ public class SubscriptionDaoTestSuite {
         Subscription sport = new Subscription("Sport");
         Subscription music = new Subscription("Music");
 
+        news.getUsers().add(adamNovak);
+        sport.getUsers().add(adamNovak);
+        news.getUsers().add(marthaLong);
+        music.getUsers().add(marthaLong);
+        news.getUsers().add(lauraJones);
+        sport.getUsers().add(lauraJones);
+        music.getUsers().add(lauraJones);
     }
 }
