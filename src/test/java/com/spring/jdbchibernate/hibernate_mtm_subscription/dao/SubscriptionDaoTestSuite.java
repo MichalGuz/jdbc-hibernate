@@ -1,5 +1,6 @@
 package com.spring.jdbchibernate.hibernate_mtm_subscription.dao;
 
+import com.spring.jdbchibernate.hibernate_mtm_subscription.Subscription;
 import com.spring.jdbchibernate.hibernate_mtm_subscription.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,6 +17,11 @@ public class SubscriptionDaoTestSuite {
         // given
         User adamNovak = new User("Adam", "Novak");
         User marthaLong = new User("Matha", "Long");
-        User lauraJones = new User("Laura", "Jones")
+        User lauraJones = new User("Laura", "Jones");
+
+        Subscription news = new Subscription("News");
+        Subscription sport = new Subscription("Sport");
+        Subscription music = new Subscription("Music");
+
     }
 }
