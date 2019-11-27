@@ -2,6 +2,7 @@ package com.spring.jdbchibernate.hibernate_mtm_subscription.dao;
 
 import com.spring.jdbchibernate.hibernate_mtm_subscription.Subscription;
 import com.spring.jdbchibernate.hibernate_mtm_subscription.User;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -46,6 +47,11 @@ public class SubscriptionDaoTestSuite {
         int sportId = sport.getId();
         subscriptionDao.save(music);
         int musicId = music.getId();
+
+        // then
+        Assert.assertNotEquals(0, newsId);
+        Assert.assertNotEquals(0, sportId);
+        Assert.assertNotEquals(0, musicId);
 
     }
 }
