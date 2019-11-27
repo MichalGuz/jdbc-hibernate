@@ -1,5 +1,6 @@
 package com.spring.jdbchibernate.hibernate_mtm_subscription.dao;
 
+import com.spring.jdbchibernate.hibernate_mtm_subscription.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,6 +13,9 @@ public class SubscriptionDaoTestSuite {
 
     @Test
     public void testSaveManyToMany() {
-
+        // given
+        User adamNovak = new User("Adam", "Novak");
+        User marthaLong = new User("Matha", "Long");
+        User lauraJones = new User("Laura", "Jones")
     }
 }
