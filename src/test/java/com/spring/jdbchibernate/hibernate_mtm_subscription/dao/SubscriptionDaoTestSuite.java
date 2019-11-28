@@ -19,7 +19,7 @@ public class SubscriptionDaoTestSuite {
     public void testSaveManyToMany() {
         // given
         User adamNovak = new User("Adam", "Novak");
-        User marthaLong = new User("Matha", "Long");
+        User marthaLong = new User("Martha", "Long");
         User lauraJones = new User("Laura", "Jones");
 
         Subscription news = new Subscription("News");

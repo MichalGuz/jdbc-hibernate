@@ -30,7 +30,7 @@ public class User {
         return id;
     }
 
-    @Column(name = "FIRSTNAME)")
+    @Column(name = "FIRSTNAME")
     @NotNull
     public String getFirstname() {
         return firstname;
@@ -56,7 +56,7 @@ public class User {
         this.id = id;
     }
 
-    public void setFirstname(String firstname) {
+    private void setFirstname(String firstname) {
         this.firstname = firstname;
     }
 
