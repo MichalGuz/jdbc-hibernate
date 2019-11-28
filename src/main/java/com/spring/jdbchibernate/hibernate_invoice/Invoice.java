@@ -28,6 +28,7 @@ public class Invoice {
         return id;
     }
 
+    @Column(name = "NUMBER_OF_INVOICE")
     public String getNumber() {
         return number;
     }
