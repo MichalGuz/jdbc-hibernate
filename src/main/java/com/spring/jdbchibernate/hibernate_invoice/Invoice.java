@@ -26,4 +26,16 @@ public class Invoice {
     public List<Item> getItems() {
         return items;
     }
+
+    private void setId(int id) {
+        this.id = id;
+    }
+
+    private void setNumber(String number) {
+        this.number = number;
+    }
+
+    private void setItems(List<Item> items) {
+        this.items = items;
+    }
 }
