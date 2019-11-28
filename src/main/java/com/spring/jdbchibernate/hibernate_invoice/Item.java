@@ -49,6 +49,8 @@ public class Item {
         return quantity;
     }
 
+    @Column(name = "VALUES")
+    @NotNull
     public BigDecimal getValue() {
         return value;
     }
