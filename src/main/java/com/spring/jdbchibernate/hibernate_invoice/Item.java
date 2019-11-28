@@ -31,6 +31,8 @@ public class Item {
         return id;
     }
 
+    @Column(name = "PRODUCTS")
+    @NotNull
     public Product getProduct() {
         return product;
     }
