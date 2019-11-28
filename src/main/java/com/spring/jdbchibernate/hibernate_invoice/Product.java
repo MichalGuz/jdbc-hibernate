@@ -1,7 +1,7 @@
 package com.spring.jdbchibernate.hibernate_invoice;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "PRODUCTS")
@@ -16,6 +16,10 @@ public class Product {
     public Product() {
     }
 
+    @Id
+    @GeneratedValue
+    @NotNull
+    @Column(name = "ID")
     public int getId() {
         return id;
     }
