@@ -29,10 +29,13 @@ public class Invoice {
     }
 
     @Column(name = "NUMBER_OF_INVOICE")
+    @NotNull
     public String getNumber() {
         return number;
     }
 
+    @Column(name = "ITEMS")
+    @NotNull
     public List<Item> getItems() {
         return items;
     }
