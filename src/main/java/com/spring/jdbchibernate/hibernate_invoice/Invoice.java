@@ -1,7 +1,8 @@
 package com.spring.jdbchibernate.hibernate_invoice;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import com.sun.istack.NotNull;
+
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -19,6 +20,10 @@ public class Invoice {
     public Invoice() {
     }
 
+    @Id
+    @NotNull
+    @GeneratedValue
+    @Column(name = "INVOICE_ID")
     public int getId() {
         return id;
     }
