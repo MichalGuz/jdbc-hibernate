@@ -18,4 +18,24 @@ public class Item {
 
     public Item() {
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public BigDecimal getValue() {
+        return value;
+    }
 }
