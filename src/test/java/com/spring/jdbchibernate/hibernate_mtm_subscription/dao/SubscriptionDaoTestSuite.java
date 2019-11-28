@@ -54,5 +54,11 @@ public class SubscriptionDaoTestSuite {
         Assert.assertNotEquals(0, newsId);
         Assert.assertNotEquals(0, sportId);
         Assert.assertNotEquals(0, musicId);
+
+        // cleanUp
+        subscriptionDao.delete(news);
+        subscriptionDao.delete(sport);
+        subscriptionDao.delete(music);
+
     }
 }
