@@ -19,7 +19,7 @@ public class Product {
     @Id
     @GeneratedValue
     @NotNull
-    @Column(name = "ID")
+    @Column(name = "PRODUCT_ID")
     public int getId() {
         return id;
     }
