@@ -11,6 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SubscriptionDaoTestSuite {
+    @Autowired
     SubscriptionDao subscriptionDao;
 
     @Test
@@ -52,6 +53,5 @@ public class SubscriptionDaoTestSuite {
         Assert.assertNotEquals(0, newsId);
         Assert.assertNotEquals(0, sportId);
         Assert.assertNotEquals(0, musicId);
-
     }
 }
