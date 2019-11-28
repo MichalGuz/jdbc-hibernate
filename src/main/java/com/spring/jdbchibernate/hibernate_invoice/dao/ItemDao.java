@@ -1,4 +1,7 @@
 package com.spring.jdbchibernate.hibernate_invoice.dao;
 
-public interface ItemDao {
+import com.spring.jdbchibernate.hibernate_invoice.Item;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ItemDao extends CrudRepository<Item, Integer> {
 }
