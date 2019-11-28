@@ -56,9 +56,12 @@ public class SubscriptionDaoTestSuite {
         Assert.assertNotEquals(0, musicId);
 
         // cleanUp
-        subscriptionDao.delete(news);
-        subscriptionDao.delete(sport);
-        subscriptionDao.delete(music);
-
+        try {
+            subscriptionDao.delete(news);
+            subscriptionDao.delete(sport);
+            subscriptionDao.delete(music);
+        } catch (Exception e) {
+            // do nothing
+        }
     }
 }
