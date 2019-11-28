@@ -37,10 +37,14 @@ public class Item {
         return product;
     }
 
+    @Column(name = "PRICES")
+    @NotNull
     public BigDecimal getPrice() {
         return price;
     }
 
+    @Column(name = "QUANTITY")
+    @NotNull
     public int getQuantity() {
         return quantity;
     }
