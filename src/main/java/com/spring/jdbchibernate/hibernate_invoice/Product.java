@@ -1,5 +1,10 @@
 package com.spring.jdbchibernate.hibernate_invoice;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "PRODUCTS")
 public class Product {
     private int id;
     private String name;
