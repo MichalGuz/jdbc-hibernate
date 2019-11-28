@@ -1,7 +1,7 @@
 package com.spring.jdbchibernate.hibernate_invoice;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 @Entity
@@ -23,6 +23,10 @@ public class Item {
     public Item() {
     }
 
+    @Id
+    @GeneratedValue
+    @NotNull
+    @Column(name = "ID")
     public int getId() {
         return id;
     }
