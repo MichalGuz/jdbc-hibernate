@@ -14,4 +14,16 @@ public class Invoice {
 
     public Invoice() {
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
 }
