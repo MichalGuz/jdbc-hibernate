@@ -57,6 +57,8 @@ public class Item {
         return product;
     }
 
+    @OneToMany
+    @JoinColumn(name = "INVOICES")
     public Invoice getInvoice() {
         return invoice;
     }
