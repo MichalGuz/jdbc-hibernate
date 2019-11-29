@@ -7,11 +7,12 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "ITEMS")
 public class Item {
-    int id;
-    Product product;
-    BigDecimal price;
-    int quantity;
-    BigDecimal value;
+    private int id;
+    private Product product;
+    private BigDecimal price;
+    private int quantity;
+    private BigDecimal value;
+
 
     public Item(Product product, BigDecimal price, int quantity, BigDecimal value) {
         this.product = product;
