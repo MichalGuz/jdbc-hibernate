@@ -32,7 +32,7 @@ public class Item {
     }
 
     @ManyToOne
-    @Column(name = "PRODUCTS")
+    @JoinColumn(name = "PRODUCTS")
     @NotNull
     public Product getProduct() {
         return product;
