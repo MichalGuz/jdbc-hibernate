@@ -8,10 +8,12 @@ import java.math.BigDecimal;
 @Table(name = "ITEMS")
 public class Item {
     private int id;
-    private Product product;
     private BigDecimal price;
     private int quantity;
     private BigDecimal value;
+
+    private Product product;
+    private Invoice invoice;
 
     public Item(BigDecimal price, int quantity, BigDecimal value) {
         this.price = price;
@@ -28,13 +30,6 @@ public class Item {
     @Column(name = "ITEM_ID")
     public int getId() {
         return id;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "PRODUCTS")
-    @NotNull
-    public Product getProduct() {
-        return product;
     }
 
     @Column(name = "PRICES")
@@ -55,6 +50,12 @@ public class Item {
         return value;
     }
 
+    @ManyToOne
+    @JoinColumn(name = "PRODUCTS")
+    @NotNull
+    public Product getProduct() {
+        return product;
+    }
     private void setId(int id) {
         this.id = id;
     }
