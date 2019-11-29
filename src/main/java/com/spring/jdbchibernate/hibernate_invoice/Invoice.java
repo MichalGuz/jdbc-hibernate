@@ -33,8 +33,12 @@ public class Invoice {
         return number;
     }
 
-    @Column(name = "ITEMS")
-    @NotNull
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            fetch = FetchType.LAZY,
+            mappedBy = "invoice",
+            targetEntity = Item.class
+    )
     public List<Item> getItems() {
         return items;
     }
@@ -47,7 +51,7 @@ public class Invoice {
         this.number = number;
     }
 
-    private void setItems(List<Item> items) {
+    public void setItems(List<Item> items) {
         this.items = items;
     }
 }
