@@ -56,5 +56,12 @@ public class InvoiceDaoTestSuite {
         item4.setProduct(product1);
         item5.setProduct(product2);
         item6.setProduct(product3);
+
+        item1.setInvoice(invoice1);
+        item2.setInvoice(invoice2);
+        item3.setInvoice(invoice1);
+        item4.setInvoice(invoice1);
+        item5.setInvoice(invoice2);
+        item6.setInvoice(invoice3);
     }
 }
