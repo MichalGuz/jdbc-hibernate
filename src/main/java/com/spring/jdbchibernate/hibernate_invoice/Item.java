@@ -13,7 +13,6 @@ public class Item {
     private int quantity;
     private BigDecimal value;
 
-
     public Item(Product product, BigDecimal price, int quantity, BigDecimal value) {
         this.product = product;
         this.price = price;
@@ -32,6 +31,7 @@ public class Item {
         return id;
     }
 
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @Column(name = "PRODUCTS")
     @NotNull
     public Product getProduct() {
