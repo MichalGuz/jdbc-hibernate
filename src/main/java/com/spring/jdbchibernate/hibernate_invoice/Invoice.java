@@ -12,9 +12,8 @@ public class Invoice {
     private String number;
     private List<Item> items;
 
-    public Invoice(String number, List<Item> items) {
+    public Invoice(String number) {
         this.number = number;
-        this.items = items;
     }
 
     public Invoice() {
