@@ -8,9 +8,9 @@ import java.util.List;
 @Entity
 @Table(name = "INVOICES")
 public class Invoice {
-    int id;
-    String number;
-    List<Item> items;
+    private int id;
+    private String number;
+    private List<Item> items;
 
     public Invoice(String number, List<Item> items) {
         this.number = number;
