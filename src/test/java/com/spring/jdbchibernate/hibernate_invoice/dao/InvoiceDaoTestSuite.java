@@ -1,6 +1,7 @@
 package com.spring.jdbchibernate.hibernate_invoice.dao;
 
 
+import com.spring.jdbchibernate.hibernate_invoice.Invoice;
 import com.spring.jdbchibernate.hibernate_invoice.Item;
 import com.spring.jdbchibernate.hibernate_invoice.Product;
 import org.junit.Test;
@@ -31,5 +32,8 @@ public class InvoiceDaoTestSuite {
         Item item5 = new Item(new BigDecimal("6"), 1000, new BigDecimal("6000"));
         Item item6 = new Item(new BigDecimal("5"), 200, new BigDecimal("1000"));
 
+        Invoice invoice1 = new Invoice("FV 01/01/2019");
+        Invoice invoice2 = new Invoice("FV 01/02/2019");
+        Invoice invoice3 = new Invoice("FV 01/03/2019");
     }
 }
