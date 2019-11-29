@@ -76,6 +76,8 @@ public class InvoiceDaoTestSuite {
         itemDao.save(item5);
         itemDao.save(item6);
 
-
+        productDao.save(product1);
+        productDao.save(product2);
+        productDao.save(product3);
     }
 }
