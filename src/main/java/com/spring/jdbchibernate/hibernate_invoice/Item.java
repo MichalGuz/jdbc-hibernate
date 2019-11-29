@@ -31,7 +31,7 @@ public class Item {
         return id;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne
     @Column(name = "PRODUCTS")
     @NotNull
     public Product getProduct() {
