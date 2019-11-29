@@ -63,5 +63,11 @@ public class InvoiceDaoTestSuite {
         item4.setInvoice(invoice1);
         item5.setInvoice(invoice2);
         item6.setInvoice(invoice3);
+
+        // when
+        invoiceDao.save(invoice1);
+        invoiceDao.save(invoice2);
+        invoiceDao.save(invoice3);
+
     }
 }
