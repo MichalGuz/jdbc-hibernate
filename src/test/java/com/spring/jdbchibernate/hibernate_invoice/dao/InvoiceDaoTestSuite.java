@@ -1,6 +1,7 @@
 package com.spring.jdbchibernate.hibernate_invoice.dao;
 
 
+import com.spring.jdbchibernate.hibernate_invoice.Product;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,6 +16,11 @@ public class InvoiceDaoTestSuite {
 
     @Test
     public void testInvoiceDaoSave() {
+        // given
+        Product product1 = new Product("water");
+        Product product2 = new Product("cola");
+        Product product3 = new Product("tonic");
+
 
     }
 }
