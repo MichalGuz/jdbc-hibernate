@@ -39,6 +39,10 @@ public class Product {
     private void setName(String name) {
         this.name = name;
     }
+
+    public Item getItem() {
+        return item;
+    }
 }
 
 
