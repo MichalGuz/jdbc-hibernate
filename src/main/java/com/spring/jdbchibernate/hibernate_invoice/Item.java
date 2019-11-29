@@ -13,8 +13,7 @@ public class Item {
     private int quantity;
     private BigDecimal value;
 
-    public Item(Product product, BigDecimal price, int quantity, BigDecimal value) {
-        this.product = product;
+    public Item(BigDecimal price, int quantity, BigDecimal value) {
         this.price = price;
         this.quantity = quantity;
         this.value = value;
