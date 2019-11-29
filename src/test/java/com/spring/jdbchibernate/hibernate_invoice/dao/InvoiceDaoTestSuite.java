@@ -42,5 +42,12 @@ public class InvoiceDaoTestSuite {
         product1.getItems().add(item4);
         product2.getItems().add(item5);
         product3.getItems().add(item6);
+
+        invoice1.getItems().add(item1);
+        invoice1.getItems().add(item2);
+        invoice2.getItems().add(item3);
+        invoice2.getItems().add(item4);
+        invoice3.getItems().add(item5);
+        invoice3.getItems().add(item6);
     }
 }
