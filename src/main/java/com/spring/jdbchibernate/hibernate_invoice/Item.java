@@ -56,12 +56,13 @@ public class Item {
     public Product getProduct() {
         return product;
     }
-    private void setId(int id) {
-        this.id = id;
+
+    public Invoice getInvoice() {
+        return invoice;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    private void setId(int id) {
+        this.id = id;
     }
 
     private void setPrice(BigDecimal price) {
@@ -74,5 +75,13 @@ public class Item {
 
     private void setValue(BigDecimal value) {
         this.value = value;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+    public void setInvoice(Invoice invoice) {
+        this.invoice = invoice;
     }
 }
