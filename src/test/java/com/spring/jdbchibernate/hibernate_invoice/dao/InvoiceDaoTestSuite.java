@@ -35,5 +35,12 @@ public class InvoiceDaoTestSuite {
         Invoice invoice1 = new Invoice("FV 01/01/2019");
         Invoice invoice2 = new Invoice("FV 01/02/2019");
         Invoice invoice3 = new Invoice("FV 01/03/2019");
+
+        product1.getItems().add(item1);
+        product2.getItems().add(item2);
+        product3.getItems().add(item3);
+        product1.getItems().add(item4);
+        product2.getItems().add(item5);
+        product3.getItems().add(item6);
     }
 }
