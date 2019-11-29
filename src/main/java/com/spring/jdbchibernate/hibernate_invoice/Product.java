@@ -41,8 +41,8 @@ public class Product {
         this.name = name;
     }
 
-    public Item getItem() {
-        return item;
+    public List<Item> getItems() {
+        return items;
     }
 
     public void setItem(Item item) {
