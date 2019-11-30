@@ -35,7 +35,7 @@ public class Invoice {
     }
 
     @OneToMany(
-            cascade = CascadeType.ALL,
+//            cascade = CascadeType.ALL,
             fetch = FetchType.LAZY,
             mappedBy = "invoice",
             targetEntity = Item.class
