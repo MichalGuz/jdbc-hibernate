@@ -27,37 +27,33 @@ public class Item {
     @Id
     @GeneratedValue
     @NotNull
-    @Column(name = "ITEM_ID")
+    @Column(name = "ID")
     public int getId() {
         return id;
     }
 
-    @Column(name = "PRICES")
-    @NotNull
+    @Column(name = "PRICE")
     public BigDecimal getPrice() {
         return price;
     }
 
     @Column(name = "QUANTITY")
-    @NotNull
     public int getQuantity() {
         return quantity;
     }
 
-    @Column(name = "VALUES")
-    @NotNull
+    @Column(name = "VALUE")
     public BigDecimal getValue() {
         return value;
     }
 
     @ManyToOne
     @JoinColumn(name = "PRODUCTS")
-    @NotNull
     public Product getProduct() {
         return product;
     }
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "INVOICES")
     public Invoice getInvoice() {
         return invoice;

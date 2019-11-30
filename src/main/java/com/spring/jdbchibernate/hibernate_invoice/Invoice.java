@@ -1,8 +1,9 @@
 package com.spring.jdbchibernate.hibernate_invoice;
 
-import com.sun.istack.NotNull;
+
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Entity
@@ -22,13 +23,12 @@ public class Invoice {
     @Id
     @NotNull
     @GeneratedValue
-    @Column(name = "INVOICE_ID")
+    @Column(name = "ID")
     public int getId() {
         return id;
     }
 
-    @Column(name = "NUMBER_OF_INVOICE")
-    @NotNull
+    @Column(name = "NUMBER")
     public String getNumber() {
         return number;
     }

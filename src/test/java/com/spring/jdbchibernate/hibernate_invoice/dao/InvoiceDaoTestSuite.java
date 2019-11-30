@@ -4,7 +4,6 @@ package com.spring.jdbchibernate.hibernate_invoice.dao;
 import com.spring.jdbchibernate.hibernate_invoice.Invoice;
 import com.spring.jdbchibernate.hibernate_invoice.Item;
 import com.spring.jdbchibernate.hibernate_invoice.Product;
-import org.hibernate.internal.build.AllowSysOut;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -44,19 +43,19 @@ public class InvoiceDaoTestSuite {
         Invoice invoice2 = new Invoice("FV 01/02/2019");
         Invoice invoice3 = new Invoice("FV 01/03/2019");
 
-        product1.getItems().add(item1);
-        product2.getItems().add(item2);
-        product3.getItems().add(item3);
-        product1.getItems().add(item4);
-        product2.getItems().add(item5);
-        product3.getItems().add(item6);
-
         invoice1.getItems().add(item1);
         invoice1.getItems().add(item2);
         invoice2.getItems().add(item3);
         invoice2.getItems().add(item4);
         invoice3.getItems().add(item5);
         invoice3.getItems().add(item6);
+
+        product1.getItems().add(item1);
+        product2.getItems().add(item2);
+        product3.getItems().add(item3);
+        product1.getItems().add(item4);
+        product2.getItems().add(item5);
+        product3.getItems().add(item6);
 
         item1.setProduct(product1);
         item2.setProduct(product2);
@@ -66,10 +65,10 @@ public class InvoiceDaoTestSuite {
         item6.setProduct(product3);
 
         item1.setInvoice(invoice1);
-        item2.setInvoice(invoice2);
-        item3.setInvoice(invoice1);
-        item4.setInvoice(invoice1);
-        item5.setInvoice(invoice2);
+        item2.setInvoice(invoice1);
+        item3.setInvoice(invoice2);
+        item4.setInvoice(invoice2);
+        item5.setInvoice(invoice3);
         item6.setInvoice(invoice3);
 
         // when
@@ -89,8 +88,8 @@ public class InvoiceDaoTestSuite {
         productDao.save(product3);
 
         int invoiceId1 = invoice1.getId();
-        int invoiceId2 = invoice1.getId();
-        int invoiceId3 = invoice1.getId();
+        int invoiceId2 = invoice2.getId();
+        int invoiceId3 = invoice3.getId();
 
         // then
         Assert.assertNotEquals(0, invoiceId1);
