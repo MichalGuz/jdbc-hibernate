@@ -4,6 +4,7 @@ package com.spring.jdbchibernate.hibernate_invoice.dao;
 import com.spring.jdbchibernate.hibernate_invoice.Invoice;
 import com.spring.jdbchibernate.hibernate_invoice.Item;
 import com.spring.jdbchibernate.hibernate_invoice.Product;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -84,6 +85,9 @@ public class InvoiceDaoTestSuite {
         int invoiceId2 = invoice1.getId();
         int invoiceId3 = invoice1.getId();
 
-
-        }
+        // then
+        Assert.assertNotEquals(0, invoiceId1);
+        Assert.assertNotEquals(0, invoiceId2);
+        Assert.assertNotEquals(0, invoiceId3);
+    }
 }
