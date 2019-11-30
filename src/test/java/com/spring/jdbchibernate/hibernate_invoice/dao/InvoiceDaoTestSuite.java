@@ -79,5 +79,11 @@ public class InvoiceDaoTestSuite {
         productDao.save(product1);
         productDao.save(product2);
         productDao.save(product3);
-    }
+
+        int invoiceId1 = invoice1.getId();
+        int invoiceId2 = invoice1.getId();
+        int invoiceId3 = invoice1.getId();
+
+
+        }
 }
