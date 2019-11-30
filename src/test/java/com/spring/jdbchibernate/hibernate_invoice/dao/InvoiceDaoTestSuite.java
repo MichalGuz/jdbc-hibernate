@@ -4,9 +4,11 @@ package com.spring.jdbchibernate.hibernate_invoice.dao;
 import com.spring.jdbchibernate.hibernate_invoice.Invoice;
 import com.spring.jdbchibernate.hibernate_invoice.Item;
 import com.spring.jdbchibernate.hibernate_invoice.Product;
+import org.hibernate.internal.build.AllowSysOut;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -15,8 +17,13 @@ import java.math.BigDecimal;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class InvoiceDaoTestSuite {
+    @Autowired
     ProductDao productDao;
+
+    @Autowired
     ItemDao itemDao;
+
+    @Autowired
     InvoiceDao invoiceDao;
 
     @Test
