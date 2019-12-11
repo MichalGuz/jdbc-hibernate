@@ -115,14 +115,19 @@ public class InvoiceDaoTestSuite {
 
         invoiceDao.deleteAll();
 
+//        itemDao.delete(item1);
+//        itemDao.delete(item2);
+//        itemDao.delete(item3);
+//        itemDao.delete(item4);
+//        itemDao.delete(item5);
+//        itemDao.delete(item6);
 
-        itemDao.delete(item1);
-        itemDao.delete(item2);
-        itemDao.delete(item3);
-        itemDao.delete(item4);
-        itemDao.delete(item5);
-        itemDao.delete(item6);
-
+        itemDao.deleteById(item1.getId());
+        itemDao.deleteById(item2.getId());
+        itemDao.deleteById(item3.getId());
+        itemDao.deleteById(item4.getId());
+        itemDao.deleteById(item5.getId());
+        itemDao.deleteById(item6.getId());
 
 
 //        productDao.deleteAll();
