@@ -109,12 +109,6 @@ public class InvoiceDaoTestSuite {
         Assert.assertNotEquals(0, invoiceId3);
 
         // cleanUp
-        productDao.delete(product2);
-        productDao.delete(product1);
-        productDao.delete(product3);
-
-        invoiceDao.deleteAll();
-
 //        itemDao.delete(item1);
 //        itemDao.delete(item2);
 //        itemDao.delete(item3);
@@ -129,6 +123,12 @@ public class InvoiceDaoTestSuite {
         itemDao.deleteById(item5.getId());
         itemDao.deleteById(item6.getId());
 
+
+        productDao.deleteById(product2.getId());
+        productDao.deleteById(product1.getId());
+        productDao.deleteById(product3.getId());
+//
+//        invoiceDao.deleteAll();
 
 //        productDao.deleteAll();
 //        invoiceDao.deleteAll();
