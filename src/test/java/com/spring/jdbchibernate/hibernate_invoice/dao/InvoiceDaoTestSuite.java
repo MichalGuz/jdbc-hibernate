@@ -127,8 +127,8 @@ public class InvoiceDaoTestSuite {
         productDao.deleteById(product2.getId());
         productDao.deleteById(product1.getId());
         productDao.deleteById(product3.getId());
-//
-//        invoiceDao.deleteAll();
+
+        invoiceDao.deleteAll();
 
 //        productDao.deleteAll();
 //        invoiceDao.deleteAll();
