@@ -8,7 +8,7 @@ import java.util.Date;
 
 @NamedQuery(
         name = "Task.retrieveLongTasks",
-        query = ""
+        query = "FROM Tasks WHERE duration > 8"
 )
 @Entity
 @Table(name = "TASKS")
