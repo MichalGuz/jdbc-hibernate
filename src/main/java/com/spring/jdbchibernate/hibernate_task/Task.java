@@ -6,7 +6,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
-@NamedQueries(
+@NamedQueries({
         @NamedQuery(
                 name = "Task.retrieveLongTasks",
                 query = "FROM Tasks WHERE duration > 8"
@@ -15,7 +15,7 @@ import java.util.Date;
                 name = "Task.retrieveShortTasks",
                 query = "FROM Tasks WHERE duration < 5"
         )
-)
+})
 @NamedNativeQuery(
         name = "Task.retrieveTasksWithEnoughTime",
         query = "SELECT * FROM TASKS" +
