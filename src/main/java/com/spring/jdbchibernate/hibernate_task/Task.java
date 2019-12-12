@@ -16,6 +16,9 @@ import java.util.Date;
                 query = "FROM Tasks WHERE duration < 5"
         )
 )
+@NamedNativeQuery(
+
+)
 @Entity
 @Table(name = "TASKS")
 public class Task {
