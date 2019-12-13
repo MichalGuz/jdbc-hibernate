@@ -2,6 +2,7 @@ package com.spring.jdbchibernate.hibernate_task.dao;
 
 import com.spring.jdbchibernate.hibernate_task.Task;
 import com.spring.jdbchibernate.hibernate_task.TaskFinancialDetails;
+import com.spring.jdbchibernate.hibernate_tasklist.TaskList;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -89,5 +90,8 @@ public class TaskDaoTestSuite {
         task2.setTaskFinancialDetails(details2);
         task3.setTaskFinancialDetails(details3);
         task4.setTaskFinancialDetails(details4);
+
+        TaskList taskList = new TaskList(LISTNAME, "ToDo tasks");
     }
+
 }
