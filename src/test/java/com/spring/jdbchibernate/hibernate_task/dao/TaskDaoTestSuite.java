@@ -92,6 +92,10 @@ public class TaskDaoTestSuite {
         task4.setTaskFinancialDetails(details4);
 
         TaskList taskList = new TaskList(LISTNAME, "ToDo tasks");
+        taskList.getTasks().add(task1);
+        taskList.getTasks().add(task2);
+        taskList.getTasks().add(task3);
+        taskList.getTasks().add(task4);
     }
 
 }
