@@ -84,5 +84,10 @@ public class TaskDaoTestSuite {
         TaskFinancialDetails details2 = new TaskFinancialDetails(new BigDecimal(20), false);
         TaskFinancialDetails details3 = new TaskFinancialDetails(new BigDecimal(30), false);
         TaskFinancialDetails details4 = new TaskFinancialDetails(new BigDecimal(40), false);
+
+        task1.setTaskFinancialDetails(details1);
+        task2.setTaskFinancialDetails(details2);
+        task3.setTaskFinancialDetails(details3);
+        task4.setTaskFinancialDetails(details4);
     }
 }
