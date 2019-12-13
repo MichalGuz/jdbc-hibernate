@@ -105,7 +105,7 @@ public class TaskDaoTestSuite {
         task3.setTaskList(taskList);
         task4.setTaskList(taskList);
 
-
+        taskListDao.save(taskList);
     }
 
 }
