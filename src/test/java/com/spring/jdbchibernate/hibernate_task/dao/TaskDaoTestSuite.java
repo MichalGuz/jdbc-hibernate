@@ -111,5 +111,6 @@ public class TaskDaoTestSuite {
         // when
         List<Task> longTasks = taskDao.retrieveLongTasks();
         List<Task> shortTasks = taskDao.retrieveShortTasks();
+        List<Task> enoughTimeTasks = taskDao.retrieveTasksWithEnoughTime();
     }
 }
