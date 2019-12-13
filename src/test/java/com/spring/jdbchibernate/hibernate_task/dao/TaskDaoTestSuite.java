@@ -107,6 +107,8 @@ public class TaskDaoTestSuite {
 
         taskListDao.save(taskList);
         int id = taskList.getId();
-    }
 
+        // when
+        List<Task> longTasks = taskDao.retrieveLongTasks();
+    }
 }
