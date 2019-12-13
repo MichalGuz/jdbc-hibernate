@@ -73,5 +73,11 @@ public class TaskDaoTestSuite {
     }
 
     @Test
-    public void testNamedQueries() {}
+    public void testNamedQueries() {
+        // given
+        Task task1 = new Task("Study hibernate", 3);
+        Task task2 = new Task("Study named query", 6);
+        Task task3 = new Task("Study SQL", 9);
+        Task task4 = new Task("Write a test",2);
+    }
 }
