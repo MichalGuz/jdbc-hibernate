@@ -106,6 +106,7 @@ public class TaskDaoTestSuite {
         task4.setTaskList(taskList);
 
         taskListDao.save(taskList);
+        int id = taskList.getId();
     }
 
 }
