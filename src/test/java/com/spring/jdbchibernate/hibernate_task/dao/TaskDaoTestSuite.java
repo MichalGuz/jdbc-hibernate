@@ -3,6 +3,7 @@ package com.spring.jdbchibernate.hibernate_task.dao;
 import com.spring.jdbchibernate.hibernate_task.Task;
 import com.spring.jdbchibernate.hibernate_task.TaskFinancialDetails;
 import com.spring.jdbchibernate.hibernate_tasklist.TaskList;
+import com.spring.jdbchibernate.hibernate_tasklist.dao.TaskListDao;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,6 +22,8 @@ public class TaskDaoTestSuite {
     @Autowired
     private TaskDao taskDao;
     private static final String DESCRIPTION = "Test: practise Hibernate.";
+
+    private TaskListDao taskListDao;
 
     @Test
     public void testTaskDaoSave() {
@@ -101,6 +104,8 @@ public class TaskDaoTestSuite {
         task2.setTaskList(taskList);
         task3.setTaskList(taskList);
         task4.setTaskList(taskList);
+
+
     }
 
 }
