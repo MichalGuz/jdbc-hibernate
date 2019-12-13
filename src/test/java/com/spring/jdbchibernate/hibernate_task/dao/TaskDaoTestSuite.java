@@ -96,6 +96,11 @@ public class TaskDaoTestSuite {
         taskList.getTasks().add(task2);
         taskList.getTasks().add(task3);
         taskList.getTasks().add(task4);
+
+        task1.setTaskList(taskList);
+        task2.setTaskList(taskList);
+        task3.setTaskList(taskList);
+        task4.setTaskList(taskList);
     }
 
 }
