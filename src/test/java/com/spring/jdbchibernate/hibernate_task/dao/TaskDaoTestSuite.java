@@ -24,6 +24,7 @@ public class TaskDaoTestSuite {
     private static final String DESCRIPTION = "Test: practise Hibernate.";
 
     private TaskListDao taskListDao;
+    private static final String LISTNAME = "ToDo List";
 
     @Test
     public void testTaskDaoSave() {
