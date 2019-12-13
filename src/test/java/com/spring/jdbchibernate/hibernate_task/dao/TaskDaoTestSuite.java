@@ -79,5 +79,10 @@ public class TaskDaoTestSuite {
         Task task2 = new Task("Study named query", 6);
         Task task3 = new Task("Study SQL", 9);
         Task task4 = new Task("Write a test",2);
+
+        TaskFinancialDetails details1 = new TaskFinancialDetails(new BigDecimal(10), false);
+        TaskFinancialDetails details2 = new TaskFinancialDetails(new BigDecimal(20), false);
+        TaskFinancialDetails details3 = new TaskFinancialDetails(new BigDecimal(30), false);
+        TaskFinancialDetails details4 = new TaskFinancialDetails(new BigDecimal(40), false);
     }
 }
