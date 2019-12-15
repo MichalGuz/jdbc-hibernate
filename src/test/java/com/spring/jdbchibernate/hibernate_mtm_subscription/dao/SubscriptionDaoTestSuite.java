@@ -17,6 +17,9 @@ public class SubscriptionDaoTestSuite {
     @Autowired
     SubscriptionDao subscriptionDao;
 
+    @Autowired
+    UserDao userDao;
+
     @Test
     public void testSaveManyToMany() {
         // given
@@ -55,7 +58,7 @@ public class SubscriptionDaoTestSuite {
         int sportId = sport.getId();
         subscriptionDao.save(music);
         int musicId = music.getId();
-        List<User> retrievedWithLastNameEquals = subscriptionDao.retrieveUserWithLastNameEquals("Novak");
+        List<User> retrievedWithLastNameEquals = .retrieveUserWithLastNameEquals("Novak");
 
         // then
         Assert.assertNotEquals(0, newsId);
