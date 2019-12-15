@@ -7,20 +7,20 @@ import java.util.List;
 
 @NamedQuery(
         name = "User.retrieveUserWithLastnameEquals",
-        query = "FROM User WHERE lastname = :LASTNAME"
+        query = "FROM User WHERE lastName = :LASTNAME"
 )
 @Entity
 @Table(name = "USERS")
 public class User {
     private int id;
-    private String firstname;
-    private String lastname;
+    private String firstName;
+    private String lastName;
 
     private List<Subscription> subscriptions = new ArrayList<>();
 
-    public User(String firstname, String lastname) {
-        this.firstname = firstname;
-        this.lastname = lastname;
+    public User(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public User() {
@@ -36,14 +36,14 @@ public class User {
 
     @Column(name = "FIRSTNAME")
     @NotNull
-    public String getFirstname() {
-        return firstname;
+    public String getFirstName() {
+        return firstName;
     }
 
     @Column(name = "LASTNAME")
     @NotNull
-    private String getLastname() {
-        return lastname;
+    private String getLastName() {
+        return lastName;
     }
 
     @ManyToMany(cascade = CascadeType.ALL)
@@ -60,12 +60,12 @@ public class User {
         this.id = id;
     }
 
-    private void setFirstname(String firstname) {
-        this.firstname = firstname;
+    private void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    private void setLastname(String lastname) {
-        this.lastname = lastname;
+    private void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     private void setSubscriptions(List<Subscription> subscriptions) {
