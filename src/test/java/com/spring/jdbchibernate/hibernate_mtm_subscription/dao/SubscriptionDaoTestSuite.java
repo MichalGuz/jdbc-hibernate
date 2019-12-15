@@ -61,6 +61,7 @@ public class SubscriptionDaoTestSuite {
         Assert.assertNotEquals(0, newsId);
         Assert.assertNotEquals(0, sportId);
         Assert.assertNotEquals(0, musicId);
+        Assert.assertEquals(2, retrievedWithLastNameEquals.size());
 
         // cleanUp
         try {
