@@ -5,6 +5,10 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+@NamedQuery(
+        name = "User.RetrieveUserWithLastnameEquals",
+        query = "FROM User WHERE lastname = :LASTNAME"
+)
 @Entity
 @Table(name = "USERS")
 public class User {
