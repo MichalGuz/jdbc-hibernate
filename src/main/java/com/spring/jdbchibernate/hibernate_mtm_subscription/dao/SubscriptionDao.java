@@ -13,6 +13,4 @@ import java.util.List;
 @Transactional
 @Repository
 public interface SubscriptionDao extends CrudRepository<Subscription, Integer> {
-    @Query
-    List<User> retrieveUserWithLastNameEquals(@Param("LASTNAME") String lastName);
 }
