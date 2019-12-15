@@ -5,6 +5,10 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+@NamedQuery(
+        name = "Subscription.retrieveSubscriptionWithFirstThreeLetters",
+        query = "FROM Subscription WHERE name LIKE 'mus%"
+)
 @Entity
 @Table(name = "SUBSCRIPTIONS")
 public class Subscription {
