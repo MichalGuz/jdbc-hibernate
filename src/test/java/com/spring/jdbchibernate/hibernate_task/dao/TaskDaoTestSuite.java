@@ -23,6 +23,7 @@ public class TaskDaoTestSuite {
     private TaskDao taskDao;
     private static final String DESCRIPTION = "Test: practise Hibernate.";
 
+    @Autowired
     private TaskListDao taskListDao;
     private static final String LISTNAME = "ToDo List";
 
