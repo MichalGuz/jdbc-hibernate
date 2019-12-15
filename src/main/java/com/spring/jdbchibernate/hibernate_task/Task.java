@@ -17,7 +17,7 @@ import java.util.Date;
         ),
         @NamedQuery(
                 name = "Task.retrieveTasksWithDurationLongerThan",
-                query =
+                query ="FROM Task WHERE duration > :DURATION"
         )
 })
 @NamedNativeQuery(
