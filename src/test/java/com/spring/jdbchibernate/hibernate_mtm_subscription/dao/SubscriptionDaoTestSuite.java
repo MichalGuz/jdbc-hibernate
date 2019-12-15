@@ -58,7 +58,7 @@ public class SubscriptionDaoTestSuite {
         int sportId = sport.getId();
         subscriptionDao.save(music);
         int musicId = music.getId();
-        List<User> retrievedWithLastNameEquals = .retrieveUserWithLastNameEquals("Novak");
+        List<User> retrievedWithLastNameEquals = userDao.retrieveUserWithLastNameEquals("Novak");
 
         // then
         Assert.assertNotEquals(0, newsId);
