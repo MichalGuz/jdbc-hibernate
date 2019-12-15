@@ -9,11 +9,11 @@ import java.util.Date;
 @NamedQueries({
         @NamedQuery(
                 name = "Task.retrieveLongTasks",
-                query = "FROM Tasks WHERE duration > 8"
+                query = "FROM Task WHERE duration > 8"
         ),
         @NamedQuery(
                 name = "Task.retrieveShortTasks",
-                query = "FROM Tasks WHERE duration < 5"
+                query = "FROM Task WHERE duration < 5"
         )
 })
 @NamedNativeQuery(
