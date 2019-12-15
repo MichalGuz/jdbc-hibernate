@@ -59,14 +59,14 @@ public class SubscriptionDaoTestSuite {
         subscriptionDao.save(music);
         int musicId = music.getId();
         List<User> retrievedWithLastNameEquals = userDao.retrieveUserWithLastNameEquals("Novak");
-        List<Subscription> retrievedSubscriptionsWhenFirstThreeLetters = subscriptionDao.retrieveSubscriptionWithFirstThreeLetters();
+        List<Subscription> retrievedSubscriptionsWithFirstThreeLetters = subscriptionDao.retrieveSubscriptionWithFirstThreeLetters();
 
         // then
         Assert.assertNotEquals(0, newsId);
         Assert.assertNotEquals(0, sportId);
         Assert.assertNotEquals(0, musicId);
         Assert.assertEquals(2, retrievedWithLastNameEquals.size());
-        Assert.assertEquals(1, retrievedSubscriptionsWhenFirstThreeLetters.size());
+        Assert.assertEquals(1, retrievedSubscriptionsWithFirstThreeLetters.size());
 
         // cleanUp
         try {
