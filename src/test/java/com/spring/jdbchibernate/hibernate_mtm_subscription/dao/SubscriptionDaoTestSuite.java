@@ -59,6 +59,7 @@ public class SubscriptionDaoTestSuite {
         subscriptionDao.save(music);
         int musicId = music.getId();
         List<User> retrievedWithLastNameEquals = userDao.retrieveUserWithLastNameEquals("Novak");
+        List<Subscription> retrievedSubscriptionsWhenFirstThreeLetters = subscriptionDao.retrieveSubscriptionWithFirstThreeLetters();
 
         // then
         Assert.assertNotEquals(0, newsId);
