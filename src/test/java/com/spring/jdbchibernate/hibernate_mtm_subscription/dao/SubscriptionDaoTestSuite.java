@@ -21,6 +21,7 @@ public class SubscriptionDaoTestSuite {
         User adamNovak = new User("Adam", "Novak");
         User marthaLong = new User("Martha", "Long");
         User lauraJones = new User("Laura", "Jones");
+        User katieNovak = new User("Katie", "Novak");
 
         Subscription news = new Subscription("News");
         Subscription sport = new Subscription("Sport");
@@ -33,6 +34,8 @@ public class SubscriptionDaoTestSuite {
         news.getUsers().add(lauraJones);
         sport.getUsers().add(lauraJones);
         music.getUsers().add(lauraJones);
+        news.getUsers().add(katieNovak);
+        music.getUsers().add(katieNovak);
 
         adamNovak.getSubscriptions().add(news);
         adamNovak.getSubscriptions().add(sport);
@@ -41,6 +44,7 @@ public class SubscriptionDaoTestSuite {
         lauraJones.getSubscriptions().add(news);
         lauraJones.getSubscriptions().add(sport);
         lauraJones.getSubscriptions().add(music);
+        katieNovak.getSubscriptions().add(music);
 
         // when
         subscriptionDao.save(news);
