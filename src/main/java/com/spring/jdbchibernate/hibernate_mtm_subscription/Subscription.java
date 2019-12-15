@@ -7,7 +7,7 @@ import java.util.List;
 
 @NamedQuery(
         name = "Subscription.retrieveSubscriptionWithFirstThreeLetters",
-        query = "FROM Subscription WHERE name LIKE 'mus%"
+        query = "FROM Subscription WHERE name LIKE 'mus%'"
 )
 @Entity
 @Table(name = "SUBSCRIPTIONS")
