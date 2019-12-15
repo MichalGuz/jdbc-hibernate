@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.List;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SubscriptionDaoTestSuite {
@@ -53,6 +55,7 @@ public class SubscriptionDaoTestSuite {
         int sportId = sport.getId();
         subscriptionDao.save(music);
         int musicId = music.getId();
+        List<User> retrievedWithLastNameEquals = subscriptionDao.retrieveUserWithLastNameEquals("Novak");
 
         // then
         Assert.assertNotEquals(0, newsId);
