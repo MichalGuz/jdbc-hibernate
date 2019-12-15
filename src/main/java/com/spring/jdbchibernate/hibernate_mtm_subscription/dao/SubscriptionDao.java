@@ -13,4 +13,6 @@ import java.util.List;
 @Transactional
 @Repository
 public interface SubscriptionDao extends CrudRepository<Subscription, Integer> {
+    @Query
+    List<Subscription> retrieveSubscriptionWithFirstThreeLetters()
 }
