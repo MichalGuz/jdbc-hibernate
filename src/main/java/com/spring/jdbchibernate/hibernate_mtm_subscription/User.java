@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @NamedQuery(
-        name = "User.retrieveUserWithLastnameEquals",
+        name = "User.retrieveUserWithLastNameEquals",
         query = "FROM User WHERE lastName = :LASTNAME"
 )
 @Entity
