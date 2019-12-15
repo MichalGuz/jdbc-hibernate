@@ -3,6 +3,7 @@ package com.spring.jdbchibernate.hibernate_task.dao;
 import com.spring.jdbchibernate.hibernate_task.Task;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
@@ -23,5 +24,5 @@ public interface TaskDao extends CrudRepository<Task, Integer> {
     List<Task> retrieveTasksWithEnoughTime();
 
     @Query
-    List<Task> retrieveTasksWithDurationLongerThat();
+    List<Task> retrieveTasksWithDurationLongerThat(@Param("DURATION") int duration);
 }
